@@ -40,8 +40,19 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
+.slider-layout {
+  padding-top: -.5em
+}
+
+.impl_table {
+  height: 4em;
+  overflow: hidden;
+  overflow-y: scroll
+}
+
 .reg_info {
   height: 6em;
+  overflow: hidden;
   overflow-y: scroll
 }
 
