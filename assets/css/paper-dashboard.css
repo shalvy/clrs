@@ -40,6 +40,16 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
+.reg_info {
+  height: 5em;
+  overflow-y: scroll
+}
+
+.card_2nd_lists {
+  margin-left: 3em;
+  padding-bottom: -1em
+}
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -10751,6 +10761,11 @@ footer .social-buttonss .bts {
 .register-page .form-group {
   margin-bottom: 25px;
 }
+.form-group-colours {
+  margin-bottom: 12px
+}
+
+
 .register-page .card .content {
   padding-top: 0;
   padding-bottom: 0;
