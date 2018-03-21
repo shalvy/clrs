@@ -55,10 +55,23 @@ Copyright (c) 2015 Daniel Eden
   box-sizing: border-box
 }
 
+.setp-control-txt {
+ width: 100px;
+ box-sizing: border-box
+}
 
 .weeklylist-wm {
   margin-top: .4em
 }
+
+.weeklylist-ol {
+  margin-top:0em;
+  margin-left: 0em;
+  color:lightgrey;
+  margin-left: 13px;
+  padding-left: 0px
+}
+
 
 .form-colcontrol {}
 
