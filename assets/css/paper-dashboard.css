@@ -40,6 +40,10 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
+.btn-search {
+  background-color: #d3d3d3
+}
+
 
 .daily-scroll {
   height: 20em;
@@ -6091,7 +6095,8 @@ strong {
 .navbar .navbar-nav > li > a.btn.dropdown-toggle, .open >
 .navbar .navbar-nav > li > a.btn.dropdown-toggle:focus, .open >
 .navbar .navbar-nav > li > a.btn.dropdown-toggle:hover {
-  background-color: #4682b4;
+  background-color: #999;
+
   color: rgba(255, 255, 255, 0.85);
   border-color: #4682b4;
 
