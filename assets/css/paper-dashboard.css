@@ -40,6 +40,12 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
+
+.daily-scroll {
+  height: 20em;
+  overflow-y: scroll
+}
+
 .setp-control {
   width: 150px;
   box-sizing: border-box
@@ -6059,15 +6065,16 @@ strong {
 }
 .btn,
 .navbar .navbar-nav > li > a.btn {
-  border-radius: 20px;
+  /* border-radius: 20px; */
   box-sizing: border-box;
   border-width: 2px;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   padding: 7px 18px;
-  border-color: #66615B;
-  color: #66615B;
+  border: none;
+  border-color: #4682b4;
+  color: #4682b4;
   -webkit-transition: all 150ms linear;
   -moz-transition: all 150ms linear;
   -o-transition: all 150ms linear;
@@ -6084,9 +6091,10 @@ strong {
 .navbar .navbar-nav > li > a.btn.dropdown-toggle, .open >
 .navbar .navbar-nav > li > a.btn.dropdown-toggle:focus, .open >
 .navbar .navbar-nav > li > a.btn.dropdown-toggle:hover {
-  background-color: #66615B;
+  background-color: #4682b4;
   color: rgba(255, 255, 255, 0.85);
-  border-color: #66615B;
+  border-color: #4682b4;
+
 }
 .btn:hover .caret, .btn:focus .caret, .btn:active .caret, .btn.active .caret, .btn:active:focus .caret, .btn:active:hover .caret, .open > .btn.dropdown-toggle .caret, .open > .btn.dropdown-toggle:focus .caret, .open > .btn.dropdown-toggle:hover .caret,
 .navbar .navbar-nav > li > a.btn:hover .caret,
