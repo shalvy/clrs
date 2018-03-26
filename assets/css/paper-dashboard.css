@@ -44,6 +44,19 @@ Copyright (c) 2015 Daniel Eden
   background-color: #d3d3d3
 }
 
+.intray-scroll {
+  height: 360px;
+  overflow-x: hidden;
+  overflow-y: scroll
+}
+
+.intray2-scroll {
+  height: 340px;
+  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: scroll
+}
+
 
 .daily-scroll {
   height: 20em;
@@ -102,7 +115,7 @@ Copyright (c) 2015 Daniel Eden
 
 .impl-card {
   margin-left: 1em;
-  height: 14em;
+  /* height: 14em; */
   padding-bottom: -1em
 }
 
@@ -10971,6 +10984,7 @@ footer .social-buttonss .bts {
   width: calc(100% - 170px);
   float: left;
   padding: 6px 15px;
+  margin-top: -13px;
 }
 
 /*             Navigation Pills               */
