@@ -5906,7 +5906,7 @@ strong {
 }
 .sidebar[data-background-color="black"]:after,
 .sidebar[data-background-color="black"]:before {
-  background-color: #2b2f33;
+  background-color: #333c43;
 }
 .sidebar[data-background-color="black"] .user {
   position: relative;
@@ -5916,19 +5916,19 @@ strong {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .sidebar[data-background-color="black"] .user .info a {
-  color: #778899;
+  color: #b3c0d0;
 }
 .sidebar[data-background-color="black"] .logo:before {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .sidebar[data-background-color="black"] .logo p {
-  color: #778899;
+  color: #b3c0d0;
 }
 .sidebar[data-background-color="black"] .logo .simple-text {
-  color: #778899;
+  color: #b3c0d0;
 }
 .sidebar[data-background-color="black"] .nav li:not(.active) > a {
-  color: #778899;
+  color: #dce9f8;
 }
 .sidebar[data-background-color="black"] .nav .divider {
   background-color: rgba(255, 255, 255, 0.2);
@@ -5938,7 +5938,7 @@ strong {
   opacity: 1;
 }
 .sidebar[data-background-color="black"] .info a {
-  color: #778899;
+  color: #b3c0d0;
 }
 .sidebar[data-background-color="black"] .user .photo {
   border-color: rgba(255, 255, 255, 0.3);
