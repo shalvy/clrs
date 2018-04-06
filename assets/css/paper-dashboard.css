@@ -6157,7 +6157,8 @@ strong {
 .btn.btn-fill,
 .navbar .navbar-nav > li > a.btn.btn-fill {
   color: #FFFFFF;
-  background-color: #66615B;
+  background-color: #333c43;
+
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -9543,7 +9544,8 @@ footer .social-buttonss .bts {
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  background-color: #66615B;
+  background-color: #333c43;
+
   color: rgba(255, 255, 255, 0.85);
   opacity: 1;
   text-decoration: none;
