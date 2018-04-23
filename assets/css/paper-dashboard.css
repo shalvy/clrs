@@ -40,6 +40,15 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 Copyright (c) 2015 Daniel Eden
 */
+.table-lists {
+  height: 46px;
+  padding-bottom: 13px;
+}
+
+.table-nav {
+  margin-bottom: 5px;
+}
+
 .btn-search {
   background-color: #d3d3d3
 }
@@ -362,6 +371,7 @@ body.swal2-iosfix {
   position: relative;
 }
 .swal2-modal button {
+  color: transparent;
   margin: 0 5px;
 }
 .swal2-modal .form-control {
