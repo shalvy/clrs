@@ -1,0 +1,371 @@
+<!-- <div class="col-md-12 ">
+  <div class="info-tag">
+    <p class="category">Select a standard table from the Standards Table List.
+    </p>
+  </div>
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card-content table-lists">
+          <div class="nav-tabs-navigation table-nav">
+            <div class="nav-tabs-wrapper">
+              <div>
+                <button href="#" class="btn btn-block dropdown-toggle pull-left" data-toggle="dropdown">
+                  Standards Table List
+                  <b class="caret"></b>
+                </button>
+                <ul id="tabs" class="dropdown-menu nav-tabs" data-tabs="tabs">
+                  <div style="margin-left:1em">
+                    Tables Below
+                  </div>
+                  <li>
+                    <a href="#var" data-toggle="tab" value="VFT">Varience Format Table</a>
+                  </li>
+                  <li>
+                    <a href="#tbt" data-toggle="tab" value="APTR">Time Budget Versus Actual Time</a>
+                  </li>
+                  <li>
+                    <a href="#ann" data-toggle="tab" value="APTR">Annual Plan Tasks Report</a>
+                  </li>
+                  <li>
+                    <a href="#myp" data-toggle="tab" value="MYP">Multi Year Plan</a>
+                  </li>
+                  <li>
+                    <a href="#mcr" data-toggle="tab" value="MPCR">Multi Period Cummulative Report</a>
+                  </li>
+                  <li>
+                    <a href="#hc" data-toggle="tab" value="CH">Health Classification</a>
+                  </li>
+                  <li>
+                    <a href="#prf" data-toggle="tab" value="MPCR">Progress Report Format</a>
+                  </li>
+                  <li>
+                    <a href="#boq" data-toggle="tab" value="CH">Bill of Quantity</a>
+                  </li>
+                  <li>
+                    <a href="#pf" data-toggle="tab" value="MYP">Programme Format</a>
+                  </li>
+                  <li>
+                    <a href="#gst" data-toggle="tab" value="APTR">General Schedule Template</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="my-tab-content" class="tab-content text-center">
+            <div class="tab-pane" id="nun"></div>
+            <div class="tab-pane" id="var">
+              <div class="col-md-12">
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="card-title" style=" margin-bottom: 0px; ">Varience Format Table of Tasks</h4>
+                  </div>
+                  <div class="card-content table-responsive table-full-width">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let cell of tableDataD.headerRow">{{ cell }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of tableDataD.dataRows">
+                          <td *ngFor="let cell of row">{{cell}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="tbt">
+              <div class="col-md-12">
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="card-title" style=" margin-bottom: 0px; ">Time Budget Versus Actual Time / Week(t/w)</h4>
+                  </div>
+                  <div class="card-content table-responsive table-full-width">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let cell of tableDataTBVA.headerRow">{{ cell }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of tableDataTBVA.dataRows">
+                          <td *ngFor="let cell of row">{{cell}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="ann">
+              <div class="col-md-12">
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="card-title" style=" margin-bottom: 0px; ">Annual Plan Tasks Forecast</h4>
+                  </div>
+                  <div class="card-content table-responsive table-full-width">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let cell of tableDataAPTF.headerRow">{{ cell }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of tableDataAPTF.dataRows">
+                          <td *ngFor="let cell of row">{{cell}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="myp">
+              <div class="col-md-12">
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="card-title" style=" margin-bottom: 0px; ">Multiplier Plan</h4>
+                  </div>
+                  <div class="card-content table-responsive table-full-width">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let cell of tableDataMP.headerRow">{{ cell }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of tableDataMP.dataRows">
+                          <td *ngFor="let cell of row">{{cell}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="mcr">
+              <div class="col-md-12">
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="card-title" style=" margin-bottom: 0px; ">Multiplier Cummulative Reports</h4>
+                  </div>
+                  <div class="card-content table-responsive table-full-width">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let cell of tableDataMCR.headerRow">{{ cell }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of tableDataMCR.dataRows">
+                          <td *ngFor="let cell of row">{{cell}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="hc">
+              <div class="col-md-12">
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="card-title" style="margin-bottom: 0px">Health Classification</h4>
+                  </div>
+                  <div class="card-content">
+                    <div class="panel-group" id="accordion">
+                      <div class="panel panel-border panel-default">
+                        <a data-toggle="collapse" href="#collapseOnePlain">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              Daily Standards
+                              <i class="ti-angle-down"></i>
+                            </h4>
+                          </div>
+                        </a>
+                        <div id="collapseOnePlain" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <div class="card-content table-responsive table-full-width">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th *ngFor="let cell of tableDataHCD.headerRow">{{ cell }}</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let row of tableDataHCD.dataRows">
+                                    <td *ngFor="let cell of row">{{cell}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-border panel-default">
+                        <a data-toggle="collapse" href="#collapseTwoPlain">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              Weekly Standards
+                              <i class="ti-angle-down"></i>
+                            </h4>
+                          </div>
+                        </a>
+                        <div id="collapseTwoPlain" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <div class="card-content table-responsive table-full-width">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th *ngFor="let cell of tableDataHCW.headerRow">{{ cell }}</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let row of tableDataHCW.dataRows">
+                                    <td *ngFor="let cell of row">{{cell}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-border panel-default">
+                        <a data-toggle="collapse" href="#collapseThreePlain">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              Monthly Standards
+                              <i class="ti-angle-down"></i>
+                            </h4>
+                          </div>
+                        </a>
+                        <div id="collapseThreePlain" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <div class="card-content table-responsive table-full-width">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th *ngFor="let cell of tableDataHCM.headerRow">{{ cell }}</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let row of tableDataHCM.dataRows">
+                                    <td *ngFor="let cell of row">{{cell}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-border panel-default">
+                        <a data-toggle="collapse" href="#collapseThreePlain">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              Yearly Standards
+                              <i class="ti-angle-down"></i>
+                            </h4>
+                          </div>
+                        </a>
+                        <div id="collapseThreePlain" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <div class="card-content table-responsive table-full-width">
+                              <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th *ngFor="let cell of tableDataHCY.headerRow">{{ cell }}</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let row of tableDataHCY.dataRows">
+                                    <td *ngFor="let cell of row">{{cell}}</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="prf">
+              <div class="col-md-12">
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="card-title" style=" margin-bottom: 0px; ">Progress Report Format</h4>
+                  </div>
+                  <div class="card-content table-responsive table-full-width">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let cell of tableDataPRF.headerRow">{{ cell }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of tableDataPRF.dataRows">
+                          <td *ngFor="let cell of row">{{cell}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="boq">
+              <div class="col-md-12">
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="card-title" style=" margin-bottom: 0px; ">Bill of Quantity</h4>
+                  </div>
+                  <div class="card-content table-responsive table-full-width">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let cell of tableDataBOQ.headerRow">{{ cell }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of tableDataBOQ.dataRows">
+                          <td *ngFor="let cell of row">{{cell}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="gst">
+              <div class="col-md-12">
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="card-title" style=" margin-bottom: 0px; ">General Schedule Template</h4>
+                  </div>
+                  <div class="card-content table-responsive table-full-width">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th *ngFor="let cell of tableDataGST.headerRow">{{ cell }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let row of tableDataGST.dataRows">
+                          <td *ngFor="let cell of row">{{cell}}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->

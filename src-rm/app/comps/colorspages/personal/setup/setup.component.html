@@ -1,0 +1,91 @@
+    <div class="col-md-12 ">
+        <div>
+          <h5 class="title" style="margin-top:0em; color:darkslategray">Setup Your Personal Account...</h5>
+          <p class="category" style="margin-top:-1em">Map out your main life activities.
+            <br>These are task classifications under which you do most of your daily activities</p>
+        </div>
+        <div class="spacer" style="height:1em"></div>
+        <div class="card-content table-responsive table-full-width">
+          <table class="table ">
+            <tbody>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Health </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Education </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Leisure </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Family </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Friends </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a routerLink="/work">Work</a>
+                </td>
+                <td>
+                  <span class="ti-menu"></span>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <form class="ng-pristine ng-valid">
+            <fieldset>
+              <div class="form-group column-sizing">
+                <a class="col-sm-3 control-label">Add New Classification</a>
+                <div class="col-sm-9">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="e.g. Health">
+                    </div>
+                    <div class="col-md-3">
+                      <button type="submit" ng-click="addMap()" class="btn btn-info btn-simple"> Save </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+    </div>
+ 

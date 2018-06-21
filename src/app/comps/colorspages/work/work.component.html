@@ -1,0 +1,63 @@
+<div class="wrapper">
+  <div class="sidebar" data-background-color="white" data-active-color="danger">
+    <sidebar-cmp></sidebar-cmp>
+  </div>
+  <div class="main-panel">
+    <navbar-cmp></navbar-cmp>
+    <div class="content">       
+      <!-- /////////////    BEGINING OF THE DASHBOARD   \\\\\\\\\\\\\ -->
+
+<!-- colours projects add new project -->
+<div class="main-content" style="padding-top: 0px;">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <div class="card">
+          <div class="card-header" style="margin-top:2em ;margin-bottom:1em">
+            <h4 class="card-title">Personal Setup</h4>
+            <!-- <p class="category">Vertical tabs</p> -->
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="nav-tabs-navigation">
+                <div class="nav-tabs-wrapper">
+                  <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                    <li class="active">
+                      <a href="#projects" data-toggle="tab"> Projects </a>
+                    </li>
+                    
+                   <li style="padding-left: 3em">
+                    <a href="#enterprise" data-toggle="tab"> Enterprise </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+              <div class="right-text-tabs">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="projects">
+                    <!-- <app-big></app-big> -->
+                    <app-project-personal></app-project-personal>
+                  </div>
+                  <div class="tab-pane" id="enterprise">
+                    <app-project-enterprise></app-project-enterprise>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+      <!-- /////////////    END OF THE DASHBOARD   \\\\\\\\\\\\\ -->
+    </div>
+    <!-- <footer-cmp></footer-cmp> -->
+  </div>
+</div>
+<!-- <fixedplugin-cmp></fixedplugin-cmp> -->

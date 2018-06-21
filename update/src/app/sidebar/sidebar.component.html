@@ -1,0 +1,119 @@
+
+<div class="logo">
+<a href="http://localhost:4000" class="simple-text logo-mini">
+        <div class="logo-img">
+            <!-- <img src="../assets/img/faces/face-2.jpg"/> -->
+            <img href="http://localhost:4000" padding-top="2em" margin="auto" src="./assets/img/faces/colours_icon3.png" />
+        </div>
+	</a>
+</div>
+<div class="sidebar-wrapper">
+	<div class="user">
+        <div class="photo">
+            <!-- <img src="../assets/img/faces/face-2.jpg" /> -->
+            <img src="./assets/img/faces/default-avatar.png" />
+        </div>
+        <div class="info">
+            <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                <span>
+                    <!-- {{name}} --> Administrator
+                    <b class="caret"></b>
+                </span>
+            </a>
+            <div class="clearfix"></div>
+
+            <div class="collapse" id="collapseExample">
+                <ul class="nav">
+                    <li>
+                        <a href="#">
+                            <i class="ti-user"></i>
+                            <span class="sidebar-normal"> My Profile </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a (click)="logout()" href="#" >
+                            <i class="ti-lock"></i><span class="sidebar-normal">logout</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ti-settings"></i>
+                            <span class="sidebar-normal"> Settings </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<div *ngIf="isNotMobileMenu()">
+        <!-- <form class="navbar-form navbar-left navbar-search-form" role="search">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" value="" class="form-control" placeholder="Search...">
+            </div>
+        </form> -->
+        <ul class="nav nav-mobile-menu">
+            <li>
+                <a href="#" class="dropdown-toggle btn-magnify" data-toggle="dropdown">
+                    <i class="material-icons">group_work</i>Colours Projects</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">Core </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-tasks fa-fw"></i> Create new project</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#stats" class="dropdown-toggle btn-magnify" data-toggle="dropdown">
+                    <i class="material-icons">person</i>Colours Personal</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#"><i class="fa fa-user fa-fw"></i> Add New</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#stats" class="dropdown-toggle btn-magnify" data-toggle="dropdown">
+                    <i class="material-icons" style="color:#2f4f4f">business</i>Colours Enterprise</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#"><i class="material-icons">group_work</i> Colours</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-industry fa-fw"></i> New Company</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a routerLink="/forms/timesheet3.html"><i class="material-icons">chats</i></a>
+            </li>
+        </ul>
+    </div>
+        <ul class="nav">
+            <li routerLinkActive="active" *ngFor="let menuitem of menuItems">
+                <!--If is a single link-->
+                <a [routerLink]="[menuitem.path]" *ngIf="menuitem.type === 'link'">
+                    <i class="{{menuitem.icontype}}"></i>
+                    <p>{{menuitem.title}}</p>
+                </a>
+                <!--If it have a submenu-->
+                <a data-toggle="collapse" href="#{{menuitem.title}}" *ngIf="menuitem.type === 'sub'">
+                    <i class="{{menuitem.icontype}}"></i>
+                    <p>{{menuitem.title}}<b class="caret"></b></p>
+                </a>
+
+                <!--Display the submenu items-->
+                <div id="{{menuitem.title}}" class="collapse" *ngIf="menuitem.type === 'sub'">
+                    <ul class="nav">
+                        <li routerLinkActive="active" *ngFor="let childitem of menuitem.children">
+                            <a [routerLink]="[menuitem.path, childitem.path]">
+                                <span class="sidebar-mini">{{childitem.ab}}</span>
+                                <span class="sidebar-normal">{{childitem.title}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+</div>

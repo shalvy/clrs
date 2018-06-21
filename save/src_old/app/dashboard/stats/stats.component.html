@@ -1,0 +1,61 @@
+<!-- colours personal add new project -->
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <!-- ngView: -->
+                <div ng-view="" class="ng-scope">
+                    <div class="card ng-scope">
+                        <form class="ng-pristine ng-valid">
+                            <div class="row">
+                                <div class="col-md-10 col-md-offset-1">
+                                    <div class="content">
+                                        <h4 class="title">Setup Your Personal Account</h4>
+                                        <p class="category">Map out your main life activities.
+                                            <br>These are task classifications under which you do most of your daily activities</p>
+                                        <div class="content table-responsive table-full-width"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="spacer" style="height:1em"></div>
+                                        <table class="table">
+                                            <tbody>
+                                                <td> </td>
+                                                <td class="col-sm-2 col-md-8">
+                                                    <a href="#!work" ng-click="setActivePage('Work')">Work</a>
+                                                </td>
+                                                <td>
+                                                    <span class="ti-menu" ></span>
+                                                </td>
+                                                <td> </td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="form-group">
+                                        <form class="ng-pristine ng-valid">
+                                            <fieldset>
+                                                <div class="form-group column-sizing">
+                                                    <label class="col-sm-2 control-label">Add New Classification</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <input type="text" class="form-control" placeholder="e.g. Health">
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <button type="submit" ng-click="addMap()" class="btn btn-simple "> Save </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

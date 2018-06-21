@@ -1,0 +1,1822 @@
+<div class="main-content" style="padding-top:0em">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header" style="margin-top:2em ;margin-bottom:1em">
+            <h4 class="card-title">Colours Personal</h4>
+          </div>
+          <div>
+            <h5 class="title" style="margin-top:0em; margin-bottom: 5px; color:darkslategray; padding-left:4em">Classification-Name...</h5>
+            <!-- {{Classification}} -->
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="left-vertical-tabs" style="width:120px">
+                <ul class="nav nav-stacked" role="tablist" style="width:142px">
+                  <li class="active">
+                    <a href="#dash" role="tab" data-toggle="tab">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#standards" role="tab" data-toggle="tab">
+                      Standards
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#setup" role="tab" data-toggle="tab">
+                      <!-- sidebar-mini="true" -->
+                      Setup
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#planning" role="tab" data-toggle="tab">
+                      Planning
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#impl" role="tab" data-toggle="tab">
+                      Implementation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#reporting" role="tab" data-toggle="tab">
+                      Reporting
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-text-tabs">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane" id="setup" style="padding-left:2em; margin-top:1em">
+                    <!-- <div class="right-text-tabs"> -->
+                    <div class="tab-content">
+                      <div class="tab-pane active">
+                        <div class="row">
+                          <div class="col-md-12 ">
+                            <div>
+                              <h5 class="title" style="margin-top:0em; color:darkslategray">Setup Your Personal Account...</h5>
+                              <p class="category" style="margin-top:-1em">Map out your main life activities.
+                                <br>These are task classifications under which you do most of your daily activities</p>
+                            </div>
+                            <div class="spacer" style="height:1em"></div>
+                            <div class="card-content table-responsive table-full-width">
+                              <table class="table ">
+                                <tbody>
+                                  <!-- ngRepeat: area in personalMap -->
+                                  <tr>
+                                    <td>
+                                      <a routerLink="/colpersonal/projects">Projects</a>
+                                    </td>
+                                    <td>
+                                      <span color="orange" class="ti-menu"></span>
+                                    </td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <a routerLink="/colpersonal/work">Work</a>
+                                    </td>
+                                    <td>
+                                      <span class="ti-menu"></span>
+                                    </td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <form class="ng-pristine ng-valid">
+                                <fieldset>
+                                  <div class="form-group column-sizing">
+                                    <a class="col-sm-3 control-label">Add New Classification</a>
+                                    <div class="col-sm-9">
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <input type="text" class="form-control" placeholder="e.g. Health">
+                                        </div>
+                                        <div class="col-md-3">
+                                          <button type="submit" ng-click="addMap()" class="btn btn-info btn-simple"> Save </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </fieldset>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- </div> -->
+                  </div>
+                  <div class="tab-pane active" id="dash">
+                    <div class="row">
+                      <div class="col-lg-4 col-sm-6">
+                        <div class="card" style="height:600px">
+                          <!--  style="height:600px" -->
+                          <div class="card-content btn-magnify">
+                            <div class="row col-x-5" style="margin-left:1em; padding-bottom: -1em">
+                              <div class="pull-left" style="color: steelblue">
+                                <!-- <a><font size="5">Colours Personal</font></a> -->
+                                <h5>
+                                  <i class="ti-palette"></i>Colours Personal</h5>
+                              </div>
+                            </div>
+                            <!-- <hr class="line" style="padding-bottom:0em; padding-top: -1em"> -->
+                            <div class="pull-left" style="margin-left:1em;padding-top: -1em; color: steelblue ">
+                              <font size="3">My Diary Today</font>
+                            </div>
+                            <div class="spacer" style="height: 2em;"></div>
+                            <div class="row">
+                              <div class="row">
+                                <div class="col-xs-6" style="margin-left:2.0em">
+                                  <p style="color:lightgrey">
+                                    <font size=3>Meeting</font>
+                                  </p>
+                                </div>
+                                <div class="col-xs-4">
+                                  <div class="pull-right">
+                                    <span class="label label-warning">
+                                      1000 Hrs
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-xs-6" style="margin-left:2.0em">
+                                  <p style="color:lightgrey">
+                                    <font size=3>Email</font>
+                                  </p>
+                                </div>
+                                <div class="col-xs-4">
+                                  <div class="pull-right">
+                                    <span class="label label-success">
+                                      1230 Hrs
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-xs-6" style="margin-left:2.0em">
+                                  <p style="color:lightgrey">
+                                    <font size=3>Skype</font>
+                                  </p>
+                                </div>
+                                <div class="col-xs-4">
+                                  <div class="pull-right">
+                                    <span class="label label-success">
+                                      1400 Hrs
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-content btn-magnify">
+                            <div class="pull-left" style="margin-left:1.0em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                              <a>
+                                <i class="fa fa-pie-chart fa-fw"></i>
+                                <font size="3"> Personal Metrics</font>
+                              </a>
+                              <br>
+                              <br>
+                            </div>
+                            <div class="spacer" style="height:2.1em"></div>
+                            <!-- chart1 -->
+                            <div class="row">
+                              <div class="card-content">
+                                <a class="pull-left" style="color:lightgrey; margin-left:1em">
+                                  <font size=2> Time budget Actual vs Planned</font>
+                                </a>
+                                <div id="PSline1"></div>
+                              </div>
+                              <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                  <font size=2>Days exercised per week</font>
+                                </p>
+                                <div id="chartTotalSubscriptions"></div>
+                              </div>
+                              <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                  <font size=2>Last Report </font>
+                                </p>
+                                <div class="form-group col-md-11">
+                                  <input type="text" class="form-control datetimepicker" placeholder="Date time" />
+                                </div>
+                                <!-- <div id="chartTotalSubscriptions"></div> -->
+                              </div>
+                            </div>
+                            <!-- ****End of Charts**** -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6">
+                        <div class="card" style="height:600px">
+                          <!--  style="height:410px" data-background-color="green" -->
+                          <div class="card-content btn-magnify">
+                            <div class="row col-x-5" style="margin-left:1em; padding-bottom: -1em ">
+                              <div class="pull-left" style="color: steelblue">
+                                <h5>
+                                  <i class="ti-layout-tab-v"></i> Colours Projects</h5>
+                              </div>
+                            </div>
+                            <!-- <hr class="line" style="padding-bottom:0em; padding-top: -1em"> -->
+                            <div class="pull-left" style="margin-left:.5em;padding-top: -1em; color: steelblue; ">
+                              <font size="3">My Current Priority Projects</font>
+                            </div>
+                            <div class="spacer" style="height:2.4em;"></div>
+                            <div class="row">
+                              <div class="col-xs-10 " style="margin-left:1.0em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                  <font size=3>Joina City</font>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-10 " style="margin-left:1.0em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                  <font size=3>Aripo Offices</font>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-10 " style="margin-left:1.0em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                  <font size=3>Colours Software</font>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-10 " style="margin-left:1.0em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                  <font size=3>Beitbridge</font>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-content btn-magnify">
+                            <div class="pull-left" style="margin-left:1.0em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                              <a>
+                                <font size="3">
+                                  <i class="fa fa-line-chart fa-fw"></i> Personal Metrics on Projects</font>
+                              </a>
+                            </div>
+                            <div class="spacer" style="height:2.1em"></div>
+                            <!-- chart1 -->
+                            <div class="row">
+                              <div class="card-content">
+                                <a class="pull-left" style="color:lightgrey; margin-left:1em">
+                                  <font size=2> Progress Actual vs Planned</font>
+                                </a>
+                                <div id="chartActivity"></div>
+                              </div>
+                              <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                  <font size=2>Meetings attended</font>
+                                </p>
+                                <div id="chartTotalDownloads" style="margin-left: 1em"></div>
+                              </div>
+                              <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                  <font size=2>Last Report: </font>
+                                </p>
+                                <div class="form-group col-md-11">
+                                  <input type="text" class="form-control datepicker" placeholder="Datetime Last Report" />
+                                </div>
+                                <!-- <div id="chartTotalSubscriptions"></div> -->
+                              </div>
+                            </div>
+                            <!-- ****End of Charts**** -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-sm-6">
+                        <div class="card" style="height:600px">
+                          <!--  style="height:410px" -->
+                          <div class="card-content btn-magnify">
+                            <div class="row col-x-5" style="margin-left:.5em; padding-bottom: -1em ">
+                              <div class="pull-left" style="color:steelblue">
+                                <h5>
+                                  <i class="ti-briefcase"></i> Colours Enterprise</h5>
+                              </div>
+                            </div>
+                            <!-- <hr class="line" style="padding-bottom:0em; padding-top: -1em"> -->
+                            <div class="pull-left" style="margin-left:1em;padding-top: -1em; color: steelblue; ">
+                              <font size="3">High Priority Enterprise Tasks</font>
+                            </div>
+                            <!-- <div class="numbers" style="margin-left:1em; color:rgb(15, 4, 4)">High Priority Enterprise Tasks</div> -->
+                            <div class="spacer" style="height:2.4em;"></div>
+                            <div class="row">
+                              <div class="col-xs-10 " style="margin-left:1em">
+                                <a class="text-danger" style="color:lightgrey" href="#send_agenda">
+                                  <!-- style="color:darkgrey" -->
+                                  <font size=3>Send Agenda</font>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-10" style="margin-left:1em">
+                                <a href="#Respond_to_mail" style="color:lightgrey">
+                                  <font size=3>Respond to Mail</font>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-10" style="margin-left:1em">
+                                <a href="#Contact_Supplier" style="color:lightgrey">
+                                  <font size=3>Contact Supplier</font>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-10" style="margin-left:1em">
+                                <a href="#Aripo" style="color:lightgrey">
+                                  <font size=3>Aripo</font>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-content btn-magnify">
+                            <div class="pull-left" style="margin-left:1.0em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                              <a>
+                                <font size="3">
+                                  <i class="fa fa-area-chart fa-fw"></i> Personal Metrics on Enterprise</font>
+                                <!-- color="steelblue" -->
+                                <!-- <span class="text-muted">Projects </span>Register -->
+                              </a>
+                            </div>
+                            <div class="spacer" style="height:2.1em"></div>
+                            <!-- chart1 -->
+                            <div class="row">
+                              <div class="card-content">
+                                <a style="color:lightgrey;margin-left:0.78em">
+                                  <font size=2>Targets Achieved vs planned</font>
+                                </a>
+                                <div id="chartEnt1" class="ct-chart"></div>
+                              </div>
+                              <div class="card-content">
+                                <p style="color:lightgrey;margin-left:0.78em">
+                                  <font size=2>Balance Score Card</font>
+                                </p>
+                                <div id="chartEnt2" class="ct-chart"></div>
+                              </div>
+                              <div class="card-content">
+                                <p style="color:lightgrey;margin-left:1em">
+                                  <font size=2>Next Progress Report: </font>
+                                </p>
+                                <div class="form-group col-md-11">
+                                  <input type="text" class="form-control datepicker" placeholder="Date time" />
+                                </div>
+                                <!-- <div id="chartTotalSubscriptions"></div> -->
+                              </div>
+                            </div>
+                            <!-- ****End of Charts**** -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" id="standards" style="padding-left:1em; margin-top:1em">
+                    <div class="col-md-12 ">
+                      <div class="info-tag">
+                        <p class="category">Select a standard table from the Standards Table List.
+                        </p>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-sm-12">
+                            <div class="card-content table-lists">
+                              <div class="nav-tabs-navigation table-nav">
+                                <div class="nav-tabs-wrapper">
+                                  <div>
+                                    <button href="#" class="btn btn-block dropdown-toggle pull-left" data-toggle="dropdown">
+                                      Standards Table List
+                                      <b class="caret"></b>
+                                    </button>
+                                    <ul id="tabs" class="dropdown-menu nav-tabs" data-tabs="tabs">
+                                      <div style="margin-left:1em">
+                                        Tables Below
+                                      </div>
+                                      <li>
+                                        <a href="#var" data-toggle="tab" value="VFT">Varience Format Table</a>
+                                      </li>
+                                      <li>
+                                        <a href="#tbt" data-toggle="tab" value="APTR">Time Budget Versus Actual Time</a>
+                                      </li>
+                                      <li>
+                                        <a href="#ann" data-toggle="tab" value="APTR">Annual Plan Tasks Report</a>
+                                      </li>
+                                      <li>
+                                        <a href="#myp" data-toggle="tab" value="MYP">Multi Year Plan</a>
+                                      </li>
+                                      <li>
+                                        <a href="#mcr" data-toggle="tab" value="MPCR">Multi Period Cummulative Report</a>
+                                      </li>
+                                      <li>
+                                        <a href="#hc" data-toggle="tab" value="CH">Health Classification</a>
+                                      </li>
+                                      <li>
+                                        <a href="#prf" data-toggle="tab" value="MPCR">Progress Report Format</a>
+                                      </li>
+                                      <li>
+                                        <a href="#boq" data-toggle="tab" value="CH">Bill of Quantity</a>
+                                      </li>
+                                      <li>
+                                        <a href="#pf" data-toggle="tab" value="MYP">Programme Format</a>
+                                      </li>
+                                      <li>
+                                        <a href="#gst" data-toggle="tab" value="APTR">General Schedule Template</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="my-tab-content" class="tab-content text-center">
+                                <div class="tab-pane" id="nun"></div>
+                                <div class="tab-pane" id="var">
+                                  <div class="col-md-12">
+                                    <div class="card card-plain">
+                                      <div class="card-header">
+                                        <h4 class="card-title" style=" margin-bottom: 0px; ">Varience Format Table of Tasks</h4>
+                                        <!-- <small class="category">eg. financial budget</small> -->
+                                      </div>
+                                      <div class="card-content table-responsive table-full-width">
+                                        <table class="table table-hover">
+                                          <thead>
+                                            <tr>
+                                              <th *ngFor="let cell of tableDataD.headerRow">{{ cell }}</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr *ngFor="let row of tableDataD.dataRows">
+                                              <td *ngFor="let cell of row">{{cell}}</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane" id="tbt">
+                                  <div class="col-md-12">
+                                    <div class="card card-plain">
+                                      <div class="card-header">
+                                        <h4 class="card-title" style=" margin-bottom: 0px; ">Time Budget Versus Actual Time / Week(t/w)</h4>
+                                        <!-- <small class="category">eg. financial budget</small> -->
+                                      </div>
+                                      <div class="card-content table-responsive table-full-width">
+                                        <table class="table table-hover">
+                                          <thead>
+                                            <tr>
+                                              <th *ngFor="let cell of tableDataTBVA.headerRow">{{ cell }}</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr *ngFor="let row of tableDataTBVA.dataRows">
+                                              <td *ngFor="let cell of row">{{cell}}</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane" id="ann">
+                                  <div class="col-md-12">
+                                    <div class="card card-plain">
+                                      <div class="card-header">
+                                        <h4 class="card-title" style=" margin-bottom: 0px; ">Annual Plan Tasks Forecast</h4>
+                                        <!-- <small class="category"> eg. financial budget</small> -->
+                                      </div>
+                                      <div class="card-content table-responsive table-full-width">
+                                        <table class="table table-hover">
+                                          <thead>
+                                            <tr>
+                                              <th *ngFor="let cell of tableDataAPTF.headerRow">{{ cell }}</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr *ngFor="let row of tableDataAPTF.dataRows">
+                                              <td *ngFor="let cell of row">{{cell}}</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane" id="myp">
+                                  <div class="col-md-12">
+                                    <div class="card card-plain">
+                                      <div class="card-header">
+                                        <h4 class="card-title" style=" margin-bottom: 0px; ">Multiplier Plan</h4>
+                                        <!-- <small class="category">eg. financial budget</small> -->
+                                      </div>
+                                      <div class="card-content table-responsive table-full-width">
+                                        <table class="table table-hover">
+                                          <thead>
+                                            <tr>
+                                              <th *ngFor="let cell of tableDataMP.headerRow">{{ cell }}</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr *ngFor="let row of tableDataMP.dataRows">
+                                              <td *ngFor="let cell of row">{{cell}}</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane" id="mcr">
+                                  <div class="col-md-12">
+                                    <div class="card card-plain">
+                                      <div class="card-header">
+                                        <h4 class="card-title" style=" margin-bottom: 0px; ">Multiplier Cummulative Reports</h4>
+                                        <!-- <small class="category">eg. financial budget</small> -->
+                                      </div>
+                                      <div class="card-content table-responsive table-full-width">
+                                        <table class="table table-hover">
+                                          <thead>
+                                            <tr>
+                                              <th *ngFor="let cell of tableDataMCR.headerRow">{{ cell }}</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr *ngFor="let row of tableDataMCR.dataRows">
+                                              <td *ngFor="let cell of row">{{cell}}</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane" id="hc">
+                                  <div class="col-md-12">
+                                    <div class="card card-plain">
+                                      <div class="card-header">
+                                        <h4 class="card-title" style="margin-bottom: 0px">Health Classification</h4>
+                                        <!-- <p class="category">Bootstrap default style</p> -->
+                                      </div>
+                                      <div class="card-content">
+                                        <div class="panel-group" id="accordion">
+                                          <div class="panel panel-border panel-default">
+                                            <a data-toggle="collapse" href="#collapseOnePlain">
+                                              <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                  Daily Standards
+                                                  <i class="ti-angle-down"></i>
+                                                </h4>
+                                              </div>
+                                            </a>
+                                            <div id="collapseOnePlain" class="panel-collapse collapse">
+                                              <div class="panel-body">
+                                                <div class="card-content table-responsive table-full-width">
+                                                  <table class="table table-hover">
+                                                    <thead>
+                                                      <tr>
+                                                        <th *ngFor="let cell of tableDataHCD.headerRow">{{ cell }}</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr *ngFor="let row of tableDataHCD.dataRows">
+                                                        <td *ngFor="let cell of row">{{cell}}</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="panel panel-border panel-default">
+                                            <a data-toggle="collapse" href="#collapseTwoPlain">
+                                              <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                  Weekly Standards
+                                                  <i class="ti-angle-down"></i>
+                                                </h4>
+                                              </div>
+                                            </a>
+                                            <div id="collapseTwoPlain" class="panel-collapse collapse">
+                                              <div class="panel-body">
+                                                <div class="card-content table-responsive table-full-width">
+                                                  <table class="table table-hover">
+                                                    <thead>
+                                                      <tr>
+                                                        <th *ngFor="let cell of tableDataHCW.headerRow">{{ cell }}</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr *ngFor="let row of tableDataHCW.dataRows">
+                                                        <td *ngFor="let cell of row">{{cell}}</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="panel panel-border panel-default">
+                                            <a data-toggle="collapse" href="#collapseThreePlain">
+                                              <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                  Monthly Standards
+                                                  <i class="ti-angle-down"></i>
+                                                </h4>
+                                              </div>
+                                            </a>
+                                            <div id="collapseThreePlain" class="panel-collapse collapse">
+                                              <div class="panel-body">
+                                                <div class="card-content table-responsive table-full-width">
+                                                  <table class="table table-hover">
+                                                    <thead>
+                                                      <tr>
+                                                        <th *ngFor="let cell of tableDataHCM.headerRow">{{ cell }}</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr *ngFor="let row of tableDataHCM.dataRows">
+                                                        <td *ngFor="let cell of row">{{cell}}</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="panel panel-border panel-default">
+                                            <a data-toggle="collapse" href="#collapseThreePlain">
+                                              <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                  Yearly Standards
+                                                  <i class="ti-angle-down"></i>
+                                                </h4>
+                                              </div>
+                                            </a>
+                                            <div id="collapseThreePlain" class="panel-collapse collapse">
+                                              <div class="panel-body">
+                                                <div class="card-content table-responsive table-full-width">
+                                                  <table class="table table-hover">
+                                                    <thead>
+                                                      <tr>
+                                                        <th *ngFor="let cell of tableDataHCY.headerRow">{{ cell }}</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr *ngFor="let row of tableDataHCY.dataRows">
+                                                        <td *ngFor="let cell of row">{{cell}}</td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane" id="prf">
+                                  <div class="col-md-12">
+                                    <div class="card card-plain">
+                                      <div class="card-header">
+                                        <h4 class="card-title" style=" margin-bottom: 0px; ">Progress Report Format</h4>
+                                        <!-- <small class="category">eg. financial budget</small> -->
+                                      </div>
+                                      <div class="card-content table-responsive table-full-width">
+                                        <table class="table table-hover">
+                                          <thead>
+                                            <tr>
+                                              <th *ngFor="let cell of tableDataPRF.headerRow">{{ cell }}</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr *ngFor="let row of tableDataPRF.dataRows">
+                                              <td *ngFor="let cell of row">{{cell}}</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane" id="boq">
+                                  <div class="col-md-12">
+                                    <div class="card card-plain">
+                                      <div class="card-header">
+                                        <h4 class="card-title" style=" margin-bottom: 0px; ">Bill of Quantity</h4>
+                                        <!-- <small class="category">eg. financial budget</small> -->
+                                      </div>
+                                      <div class="card-content table-responsive table-full-width">
+                                        <table class="table table-hover">
+                                          <thead>
+                                            <tr>
+                                              <th *ngFor="let cell of tableDataBOQ.headerRow">{{ cell }}</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr *ngFor="let row of tableDataBOQ.dataRows">
+                                              <td *ngFor="let cell of row">{{cell}}</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tab-pane" id="gst">
+                                  <div class="col-md-12">
+                                    <div class="card card-plain">
+                                      <div class="card-header">
+                                        <h4 class="card-title" style=" margin-bottom: 0px; ">General Schedule Template</h4>
+                                        <!-- <small class="category">eg. financial budget</small> -->
+                                      </div>
+                                      <div class="card-content table-responsive table-full-width">
+                                        <table class="table table-hover">
+                                          <thead>
+                                            <tr>
+                                              <th *ngFor="let cell of tableDataGST.headerRow">{{ cell }}</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr *ngFor="let row of tableDataGST.dataRows">
+                                              <td *ngFor="let cell of row">{{cell}}</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="planning">
+                    <div class="card-content">
+                      <div class="nav-tabs-navigation">
+                        <div class="nav-tabs-wrapper">
+                          <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                            <li class="active">
+                              <a href="#home" data-toggle="tab">Task Scheduler</a>
+                            </li>
+                            <!-- <li>
+                              <a href="#profile" data-toggle="tab">PEP Matrix</a>
+                            </li> -->
+                            <li>
+                              <a href="#calendar" data-toggle="tab">Calendar</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div id="my-tab-content" class="tab-content text-center">
+                        <div class="tab-pane active" id="home">
+                          <!-- Task Scheduler -->
+                          <div class="col-md-12">
+                            <div style="color: grey">
+                              <div>
+                                <h5 class="title" style="margin-top:0em; color: grey">Task Scheduler</h5>
+                              </div>
+                              <div class="content">
+                                <table class="table-nested">
+                                  <thead>
+                                    <tr>
+                                      <th></th>
+                                      <th class="cell-input">
+                                        <span class="ti-plus"></span>Task Name</th>
+                                      <th> Duration </th>
+                                      <th> Start </th>
+                                      <th> End </th>
+                                      <th> Champion </th>
+                                    </tr>
+                                  </thead>
+                                  <!-- ngRepeat: item in list -->
+                                  <tbody>
+                                    <tr>
+                                      <form class="ng-pristine ng-valid"></form>
+                                      <td class="cell-input">
+                                        <input type="text" placeholder="New Task">
+                                      </td>
+                                      <td class="cell-input">
+                                        <input type="text" placeholder="duration">
+                                      </td>
+                                      <td class="cell-input">
+                                        <input type="date" placeholder="start">
+                                      </td>
+                                      <td class="cell-input">
+                                        <input type="date" placeholder="end">
+                                      </td>
+                                      <td class="cell-input">
+                                        <input type="text" placeholder="Project Champion">
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <div class="tab-pane" id="profile">
+                          <p>will put code here</p>
+                        </div> -->
+                        <div class="tab-pane" id="calendar">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="col-md-10 col-md-offset-1">
+                                <div class="card card-calendar">
+                                  <div class="card-content">
+                                    <div id="fullCalendar"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="impl">
+                    <div class="col-md-12 ">
+                      <div class="card-content">
+                        <div class="nav-tabs-navigation">
+                          <div class="nav-tabs-wrapper">
+                            <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                              <li class="active">
+                                <a href="#things" data-toggle="tab">Things To Do In Tray</a>
+                              </li>
+                              <li>
+                                <a href="#weekly" data-toggle="tab">Weekly Calendar</a>
+                              </li>
+                              <li>
+                                <a href="#daily" data-toggle="tab">Daily Diary</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div id="my-tab-content3" class="tab-content">
+                          <div class="tab-pane active" id="things">
+                            <!-- <p>Here is your profile.</p> -->
+                            <!-- ++++++++++++++++++++++++++++++++Things to do in tray++++++++++++++++++++++++++++++++ -->
+                            <div class="row">
+                              <div class="col-lg-4 col-md-6 col-md-offset-1" id="in-tray">
+                                <div class="card" style="height:480px; padding-left: -1em">
+                                  <div class="row card-content impl-card btn-magnify">
+                                    <div class="row col-x-5">
+                                      <div class="card-header">
+                                        <h4 class="panel-title" style="color: steelblue">
+                                          <i class="ti-palette"></i> Things To Do In Tray</h4>
+                                      </div>
+                                    </div>
+                                    <div class="spacer" style="height:1em"></div>
+                                    <div class="row">
+                                      <div class="pull-left" style="margin-left:1em;padding-top: -1em; color: rgb(184, 45, 14) ">
+                                        <font size="3">Outstanding Tasks</font>
+                                      </div>
+                                    </div>
+                                    <div class="row pull-left">
+                                      <div class="row">
+                                        <div class="col-xs-10" style="margin-left:1.0em">
+                                          <a style="color:lightgrey" href="#send_agenda">
+                                            <font size=3>Joina City</font>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-xs-10 " style="margin-left:1.0em">
+                                          <a style="color:lightgrey" href="#send_agenda">
+                                            <font size=3>Aripo Offices</font>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-xs-10 " style="margin-left:1.0em">
+                                          <a style="color:lightgrey" href="#send_agenda">
+                                            <font size=3>Colours Software</font>
+                                          </a>
+                                        </div>
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-xs-10 " style="margin-left:1.0em">
+                                          <a style="color:lightgrey" href="#send_agenda">
+                                            <font size=3>Beitbridge</font>
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row card_2nd_lists">
+                                    <div class="row">
+                                      <div class="pull-left" style="color: steelblue">
+                                        <font size="3">Current Tasks</font>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="row">
+                                        <div class="col-xs-6">
+                                          <p style="color:lightgrey">
+                                            <font size=3>Meeting</font>
+                                          </p>
+                                        </div>
+                                        <!-- <div class="col-xs-3">
+                                          <div class="pull-right">
+                                            <span class="label label-warning">
+                                              1000 Hrs
+                                            </span>
+                                          </div>
+                                        </div> -->
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-xs-6">
+                                          <p style="color:lightgrey">
+                                            <font size=3>Email</font>
+                                          </p>
+                                        </div>
+                                        <!-- <div class="col-xs-3">
+                                          <div class="pull-right">
+                                            <span class="label label-success">
+                                              1230 Hrs
+                                            </span>
+                                          </div>
+                                        </div> -->
+                                      </div>
+                                      <div class="row">
+                                        <div class="col-xs-6">
+                                          <p style="color:lightgrey">
+                                            <font size=3>Skype</font>
+                                          </p>
+                                        </div>
+                                        <!-- <div class="col-xs-3">
+                                          <div class="pull-right">
+                                            <span class="label label-success">
+                                              1400 Hrs
+                                            </span>
+                                          </div>
+                                        </div> -->
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="spacer" style="height:1em"></div>
+                                  <div class="card-content btn-magnify">
+                                    <div class="pull-left" style="margin-left:1.0em">
+                                      <a>
+                                        <i class="fa fa-pie-chart fa-fw"></i>
+                                        <font size="3"> Upcoming Tasks</font>
+                                      </a>
+                                    </div>
+                                  </div>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <div class="row dropup" style="margin-left:2.0em">
+                                    <a class="panel-default dropdown-toggle" type="button" data-toggle="dropdown">Add new task</a>
+                                    <ul class="dropdown-menu">
+                                      <li>
+                                        <div class="action-form">
+                                          <div class="row">
+                                            <div class="col-sm-6 col-lg-3">
+                                              <div class="card-content">
+                                                <p style="color:lightgrey">
+                                                  <font size=3>Action</font>
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3">
+                                              <div class="card-content text-center">
+                                                <input type="text" class="form-control action-input" value placeholder="Create action">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-sm-6 col-lg-3">
+                                              <div class="card-content text-center">
+                                                <p style="color:lightgrey">
+                                                  <font size=3>Units</font>
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3">
+                                              <div class="card-content text-center">
+                                                <input type="text" class="form-control action-input" value placeholder="Units used">
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-sm-6 col-lg-3">
+                                              <div class="card-content text-center">
+                                                <p style="color:lightgrey">
+                                                  <font size=3>Target Qty</font>
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-3">
+                                              <div class="card-content text-center">
+                                                <input type="text" class="form-control action-input" value placeholder="Units used">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-8" id="weekly-list">
+                                <div class="card" style="height:480px; padding-left: -1em">
+                                  <div class="row card-content impl-card btn-magnify">
+                                    <div class="card-header">
+                                      <h4 class="panel-title" style="color: steelblue">My Weekly Todo List</h4>
+                                    </div>
+                                    <div class="spacer" style="height:1em"></div>
+                                    <div class="card-content">
+                                      <div id="acordeon">
+                                        <div class="panel-group" id="accordion">
+                                          <div class="panel panel-border panel-default">
+                                            <a data-toggle="collapse" href="#collapseOne">
+                                              <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                  <!-- class="panel-title" -->
+                                                  Joina City
+                                                  <i class="ti-angle-down"></i>
+                                                </h4>
+                                              </div>
+                                            </a>
+                                            <div id="collapseOne" class="panel-collapse collapse">
+                                              <div class="panel-body">
+                                                <ul>
+                                                  <li>
+                                                    Digging
+                                                    <input class="pull-right" id="checkbox1" type="checkbox">
+                                                    <!-- <div class="spacer" type="hidden" style="width:3em"></div>Units: m3
+                                                                                  <div class="spacer" type="hidden" style="width:3em"></div>Target quantity: 12 sides by 6.4 m3 -->
+                                                  </li>
+                                                  <!-- <li class="divider"></li> -->
+                                                  <li>
+                                                    Wood work
+                                                    <input class="pull-right" id="checkbox2" type="checkbox">
+                                                    <!-- <div class="spacer" type="hidden" style="width:3em"></div>Units: m2
+                                                                                  <div class="spacer" type="hidden" style="width:3em"></div>Target quantity: 2x12 sides 8 m2 -->
+                                                  </li>
+                                                  <!-- <li class="divider"></li> -->
+                                                  <li>
+                                                    Levelling
+                                                    <input class="pull-right" id="checkbox3" type="checkbox">
+                                                    <!-- <div class="spacer" type="hidden" style="width:3em"></div>Units: m2
+                                                                                  <div class="spacer" type="hidden" style="width:3em"></div>Target quantity: 12 sides by 0.64 m3 -->
+                                                  </li>
+                                                  <!-- <li class="divider"></li> -->
+                                                  <li>
+                                                    Concrete
+                                                    <input class="pull-right" id="checkbox3" type="checkbox">
+                                                    <!-- <div class="spacer" type="hidden" style="width:3em"></div>Units: m3
+                                                                                  <div class="spacer" type="hidden" style="width:3em"></div>Target quantity: 12 sides by 6.4 m3 -->
+                                                  </li>
+                                                  <!-- <li class="divider"></li> -->
+                                                  <li>
+                                                    Slab
+                                                    <input class="pull-right" id="checkbox4" type="checkbox">
+                                                    <!-- <div class="spacer" type="hidden" style="width:3em"></div>Units: m2
+                                                                                  <div class="spacer" type="hidden" style="width:3em"></div>Target quantity: ......... -->
+                                                  </li>
+                                                  <!-- <br>
+                                                  <div class="row dropup">
+                                                    <a class="panel-default dropdown-toggle" type="button" data-toggle="dropdown">Add action item</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li>
+                                                        <div class="action-form">
+                                                          <a>
+                                                            <div class="row">
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content">
+                                                                  <p style="color:lightgrey">
+                                                                    <font size=3>Action</font>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <input type="text" class="form-control action-input" value placeholder="Create action">
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="row">
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <p style="color:lightgrey">
+                                                                    <font size=3>Units</font>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="row">
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <p style="color:lightgrey">
+                                                                    <font size=3>Target Qty</font>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </li>
+                                                    </ul>
+                                                  </div> -->
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="panel panel-default">
+                                            <a data-toggle="collapse" href="#collapseTwo">
+                                              <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                  Aripo Offices
+                                                  <i class="ti-angle-down"></i>
+                                                </h4>
+                                              </div>
+                                            </a>
+                                            <div id="collapseTwo" class="panel-collapse collapse">
+                                              <div class="panel-body">
+                                                <ul>
+                                                  <li>
+                                                    Site Visit
+                                                    <input class="pull-right" id="checkbox1" type="checkbox">
+                                                  </li>
+                                                  <li>
+                                                    Council Paper Work
+                                                    <input class="pull-right" id="checkbox2" type="checkbox">
+                                                  </li>
+                                                  <li>
+                                                    Planning
+                                                    <input class="pull-right" id="checkbox3" type="checkbox">
+                                                  </li>
+                                                  <li>
+                                                    Architecture
+                                                    <input class="pull-right" id="checkbox3" type="checkbox">
+                                                  </li>
+                                                  <li>
+                                                    Quantity Survey
+                                                    <input class="pull-right" id="checkbox4" type="checkbox">
+                                                  </li>
+                                                  <!-- <br>
+                                                  <div class="row dropup">
+                                                    <a class="panel-default dropdown-toggle" type="button" data-toggle="dropdown">Add action item</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li>
+                                                        <div class="action-form">
+                                                          <a>
+                                                            <div class="row">
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content">
+                                                                  <p style="color:lightgrey">
+                                                                    <font size=3>Action</font>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <input type="text" class="form-control action-input" value placeholder="Create action">
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="row">
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <p style="color:lightgrey">
+                                                                    <font size=3>Units</font>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="row">
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <p style="color:lightgrey">
+                                                                    <font size=3>Target Qty</font>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </li>
+                                                    </ul>
+                                                  </div> -->
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="panel panel-border panel-default">
+                                            <a data-toggle="collapse" href="#collapseThree">
+                                              <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                  Beitbridge
+                                                  <i class="ti-angle-down"></i>
+                                                </h4>
+                                              </div>
+                                            </a>
+                                            <div id="collapseThree" class="panel-collapse collapse">
+                                              <div class="panel-body">
+                                                <ul>
+                                                  <li>
+                                                    Digging
+                                                    <input class="pull-right" id="checkbox1" type="checkbox">
+                                                  </li>
+                                                  <li>
+                                                    Wood work
+                                                    <input class="pull-right" id="checkbox2" type="checkbox">
+                                                  </li>
+                                                  <li>
+                                                    Levelling
+                                                    <input class="pull-right" id="checkbox3" type="checkbox">
+                                                  </li>
+                                                  <li>
+                                                    Concrete
+                                                    <input class="pull-right" id="checkbox3" type="checkbox">
+                                                  </li>
+                                                  <li>
+                                                    Slab
+                                                    <input class="pull-right" id="checkbox4" type="checkbox">
+                                                  </li>
+                                                  <!-- <br>
+                                                  <div class="row dropup">
+                                                    <a class="panel-default dropdown-toggle" type="button" data-toggle="dropdown">Add action item</a>
+                                                    <ul class="dropdown-menu">
+                                                      <li>
+                                                        <div class="action-form">
+                                                          <a>
+                                                            <div class="row">
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content">
+                                                                  <p style="color:lightgrey">
+                                                                    <font size=3>Action</font>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <input type="text" class="form-control action-input" value placeholder="Create action">
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="row">
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <p style="color:lightgrey">
+                                                                    <font size=3>Units</font>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <div class="row">
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <p style="color:lightgrey">
+                                                                    <font size=3>Target Qty</font>
+                                                                  </p>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-6 col-lg-3">
+                                                                <div class="card-content text-center">
+                                                                  <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </a>
+                                                        </div>
+                                                      </li>
+                                                    </ul>
+                                                  </div> -->
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!--  end acordeon -->
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="weekly">
+                            <!-- ++++++++++++++++++++++++++++++++Weekly List++++++++++++++++++++++++++++++++ -->
+                            <div class="row">
+                              <div class="col-lg-4 col-md-6 col-md-offset-1 ">
+                                <div class="">
+                                  <div class="card-content btn-magnify">
+                                    <div class="row col-x-5" style="padding-bottom: 0em; margin-top:-.5em">
+                                      <div class="card-header pull-left">
+                                        <h4 class="panel-title" style="color: steelblue">My weekly to do list</h4>
+                                      </div>
+                                    </div>
+                                    <div class="spacer" style="height:2.0em;"></div>
+                                    <h4 class="panel-title" style="color: #1e2022">Action Item</h4>
+                                    <!-- <div class="spacer" style="height:2.0em;"></div> -->
+                                    <div class="">
+                                      <ol class="weeklylist-ol">
+                                        <li style="margin-top: 0em">Digging</li>
+                                        <li style="margin-top:.5em">Wood work</li>
+                                        <li style="margin-top:.5em">Level</li>
+                                        <li style="margin-top:.5em">Concrete</li>
+                                        <li style="margin-top:.5em">Slab</li>
+                                      </ol>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-8" id="weekly-list">
+                                <div class="" style="padding-left: -1em">
+                                  <div class="row card-content impl-card btn-magnify">
+                                    <div class="row col-x-5">
+                                      <div class="card-header" style="color: steelblue; margin-left:.2em; margin-top:-.5em">
+                                        <h4 class="panel-title">
+                                          <i class="ti-calendar"></i> Weekly Calendar </h4>
+                                      </div>
+                                    </div>
+                                    <div class="spacer" style="height:1.0em;"></div>
+                                    <div class="row pull-left">
+                                      <div class="col-md-12">
+                                        <div class="card-content table-responsive table-full-width" style="height:3em">
+                                          <table class="table table-hover">
+                                            <tr>
+                                              <th *ngFor="let cell of tableDataC.headerRow">{{ cell }}</th>
+                                            </tr>
+                                          </table>
+                                        </div>
+                                        <div class="col-md-11" style="margin-left:.5em">
+                                          <div id="sliderDouble" class="slider slider-info"></div>
+                                          <br>
+                                          <div id="slider_n1" class="slider slider-info slider-layout"></div>
+                                          <br>
+                                          <div id="slider_n2" class="slider slider-info slider-layout"></div>
+                                          <br>
+                                          <div id="slider_n3" class="slider slider-info slider-layout"></div>
+                                          <br>
+                                          <div id="slider_n4" class="slider slider-info slider-layout"></div>
+                                          <br>
+                                        </div>
+                                      </div>
+                                      <div class="row dropup pull-right" style="margin-right:3em">
+                                        <a class="panel-default dropdown-toggle" type="button" data-toggle="dropdown">Add action item</a>
+                                        <ul class="dropdown-menu">
+                                          <li>
+                                            <div class="action-form">
+                                              <a>
+                                                <div class="row">
+                                                  <div class="col-sm-6 col-lg-3">
+                                                    <div class="card-content">
+                                                      <p style="color:lightgrey">
+                                                        <font size=3>Action</font>
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-6 col-lg-3">
+                                                    <div class="card-content text-center">
+                                                      <input type="text" class="form-control action-input" value placeholder="Create action">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-sm-6 col-lg-3">
+                                                    <div class="card-content text-center">
+                                                      <p style="color:lightgrey">
+                                                        <font size=3>Units</font>
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-6 col-lg-3">
+                                                    <div class="card-content text-center">
+                                                      <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="row">
+                                                  <div class="col-sm-6 col-lg-3">
+                                                    <div class="card-content text-center">
+                                                      <p style="color:lightgrey">
+                                                        <font size=3>Target Qty</font>
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-6 col-lg-3">
+                                                    <div class="card-content text-center">
+                                                      <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </a>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tab-pane" id="daily">
+                            <!-- <p>Larger.</p> -->
+                            <!-- ++++++++++++++++++++++++++++++++My diary Today++++++++++++++++++++++++++++++++ -->
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="" style=" margin-left:2em; height:480px">
+                                  <div class="card-content btn-magnify">
+                                    <div class="row col-x-5" style="margin-left:1em; padding-bottom: -1em; margin-top:-1em">
+                                      <div class="col-xs-6 pull-left" style="color: steelblue">
+                                        <h5>
+                                          <i class="ti-palette"></i> My Diary Today</h5>
+                                      </div>
+                                    </div>
+                                    <div id="daily-diary">
+                                      <fieldset>
+                                        <div class="form-group column-sizing">
+                                          <div class="col-sm-12">
+                                            <div class="row">
+                                              <div class="col-md-5" style="padding-left: 34px; padding-right:5px">
+                                                <h4 class="panel-title" style="color: #4b4e52">Action Item</h4>
+                                              </div>
+                                              <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                <h4 class="panel-title" style="color:#4b4e52">Units</h4>
+                                              </div>
+                                              <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                <h4 class="panel-title" style="color:#4b4e52">Time start</h4>
+                                              </div>
+                                              <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                <h4 class="panel-title" style="color:#4b4e52">To finish</h4>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </fieldset>
+                                      <br>
+                                      <div class="daily-scroll">
+                                        <fieldset>
+                                          <div class="form-group column-sizing">
+                                            <div class="col-sm-12">
+                                              <div class="row">
+                                                <div class="col-md-5" style="padding-left: 34px; padding-right:5px">
+                                                  <p style="color:lightgrey">
+                                                    <font size=3>Meeting</font>
+                                                  </p>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader" style=" padding-left: 10px; padding-right: 10px; height:2em" placeholder="cm/m/kg/ft"
+                                                    />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px; height:2em"
+                                                      placeholder="Time from" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px;  height:2em"
+                                                      placeholder="Time to" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                        <fieldset>
+                                          <div class="form-group column-sizing">
+                                            <div class="col-sm-12">
+                                              <div class="row">
+                                                <div class="col-md-5" style="padding-left: 34px; padding-right:5px">
+                                                  <p style="color:lightgrey">
+                                                    <font size=3>Scope</font>
+                                                  </p>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader" style=" padding-left: 10px; padding-right: 10px; height:2em" placeholder="cm/m/kg/ft"
+                                                    />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px; height:2em"
+                                                      placeholder="Time from" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px;  height:2em"
+                                                      placeholder="Time to" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                        <fieldset>
+                                          <div class="form-group column-sizing">
+                                            <div class="col-sm-12">
+                                              <div class="row">
+                                                <div class="col-md-5" style="padding-left: 34px; padding-right:5px">
+                                                  <p style="color:lightgrey">
+                                                    <font size=3>Business case</font>
+                                                  </p>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader" style=" padding-left: 10px; padding-right: 10px; height:2em" placeholder="cm/m/kg/ft"
+                                                    />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px; height:2em"
+                                                      placeholder="Time from" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px;  height:2em"
+                                                      placeholder="Time to" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                        <fieldset>
+                                          <div class="form-group column-sizing">
+                                            <div class="col-sm-12">
+                                              <div class="row">
+                                                <div class="col-md-5" style="padding-left: 34px; padding-right:5px">
+                                                  <p style="color:lightgrey">
+                                                    <font size=3>Feasibility study</font>
+                                                  </p>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader" style=" padding-left: 10px; padding-right: 10px; height:2em" placeholder="cm/m/kg/ft"
+                                                    />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px; height:2em"
+                                                      placeholder="Time from" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px;  height:2em"
+                                                      placeholder="Time to" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                        <fieldset>
+                                          <div class="form-group column-sizing">
+                                            <div class="col-sm-12">
+                                              <div class="row">
+                                                <div class="col-md-5" style="padding-left: 34px; padding-right:5px">
+                                                  <p style="color:lightgrey">
+                                                    <font size=3>Design</font>
+                                                  </p>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader" style=" padding-left: 10px; padding-right: 10px; height:2em" placeholder="cm/m/kg/ft"
+                                                    />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px; height:2em"
+                                                      placeholder="Time from" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px;  height:2em"
+                                                      placeholder="Time to" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                        <fieldset>
+                                          <div class="form-group column-sizing">
+                                            <div class="col-sm-12">
+                                              <div class="row">
+                                                <div class="col-md-5" style="padding-left: 34px; padding-right:5px">
+                                                  <p style="color:lightgrey">
+                                                    <font size=3>logic design</font>
+                                                  </p>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader" style=" padding-left: 10px; padding-right: 10px; height:2em" placeholder="cm/m/kg/ft"
+                                                    />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px; height:2em"
+                                                      placeholder="Time from" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px;  height:2em"
+                                                      placeholder="Time to" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                        <fieldset>
+                                          <div class="form-group column-sizing">
+                                            <div class="col-sm-12">
+                                              <div class="row">
+                                                <div class="col-md-5" style="padding-left: 34px; padding-right:5px">
+                                                  <p style="color:lightgrey">
+                                                    <font size=3>architect</font>
+                                                  </p>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader" style=" padding-left: 10px; padding-right: 10px; height:2em" placeholder="cm/m/kg/ft"
+                                                    />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px; height:2em"
+                                                      placeholder="Time from" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px;  height:2em"
+                                                      placeholder="Time to" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                        <fieldset>
+                                          <div class="form-group column-sizing">
+                                            <div class="col-sm-12">
+                                              <div class="row">
+                                                <div class="col-md-5" style="padding-left: 34px; padding-right:5px">
+                                                  <p style="color:lightgrey">
+                                                    <font size=3>code</font>
+                                                  </p>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader" style=" padding-left: 10px; padding-right: 10px; height:2em" placeholder="cm/m/kg/ft"
+                                                    />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px; height:2em"
+                                                      placeholder="Time from" />
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-2" style="padding-left: 5px; padding-right:5px">
+                                                  <div class="form-group">
+                                                    <input type="text" class="form-control panel-boader timepicker" style=" padding-left: 10px; padding-right: 10px;  height:2em"
+                                                      placeholder="Time to" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                      </div>
+                                      <div class="spacer" style="height:3em"></div>
+                                      <div class="row col-x-5" style="margin-left:1em; padding-bottom: -1em; margin-top:-1em">
+                                        <div class="col-xs-6 pull-right" style="color: steelblue">
+                                          <div class="row dropup pull-right" style="margin-right:6em">
+                                            <a class="panel-default dropdown-toggle" type="button" data-toggle="dropdown">Add action item</a>
+                                            <ul class="dropdown-menu">
+                                              <li>
+                                                <div class="action-form">
+                                                  <a>
+                                                    <div class="row">
+                                                      <div class="col-sm-6 col-lg-3">
+                                                        <div class="card-content">
+                                                          <p style="color:lightgrey">
+                                                            <font size=3>Action</font>
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-sm-6 col-lg-3">
+                                                        <div class="card-content text-center">
+                                                          <input type="text" class="form-control action-input" value placeholder="Create action">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-sm-6 col-lg-3">
+                                                        <div class="card-content text-center">
+                                                          <p style="color:lightgrey">
+                                                            <font size=3>Units</font>
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-sm-6 col-lg-3">
+                                                        <div class="card-content text-center">
+                                                          <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="col-sm-6 col-lg-3">
+                                                        <div class="card-content text-center">
+                                                          <p style="color:lightgrey">
+                                                            <font size=3>Target Qty</font>
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-sm-6 col-lg-3">
+                                                        <div class="card-content text-center">
+                                                          <input type="text" class="form-control action-input" value placeholder="Units used">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </a>
+                                                </div>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="reporting" style=" padding-left: 2em; margin-top:1em">
+                    <!-- <p>Reporting</p> -->
+                    <p>It’s one continuous form where hardware and software function in perfect unison, creating a new generation
+                      of phone that’s better by any measure.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card card-calendar"><div class="card-content"><div id="fullCalendar"></div></div></div> -->
+      </div>
+    </div>
+  </div>
+</div>

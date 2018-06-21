@@ -1,0 +1,50 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-content">
+                <table class="table table-bordered table-striped">
+                    <!-- <thead></thead>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-3">
+                            <div class="card-title">
+                                <h5>Section</h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5">
+                            <div class="form-group">
+                                <select name="cities" class="form-control">
+                                    <option selected="" value="5.0">5</option>
+                                    <option value="1.0">1</option>
+                                    <option value="2.0">2</option>
+                                    <option value="3.0">3</option>
+                                    <option value="4.0">4</option>
+                                    <option value="5.0">5</option>
+                                    <option value="6.0">6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> -->
+                    <tbody>
+                        <tr *ngFor="let item of items | async">
+                            <!-- <td>{{$index+1}}</td> -->
+                            <td>{{item.section5}}</td>
+                            <td>{{item.section5_name}}</td>
+                            <td>{{item.section5_unit}}</td>
+                            <td>{{item.section5_quantity}}</td>
+                            <td>{{item.section5_amount}}</td>
+                        </tr>
+                        <tr>
+                            <td><input [(ngModel)]="section5" name="section5" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="section5_name" name="section5_name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="section5_unit" name="section5_unit" class="form-control costsum-xs"style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="section5_quantity" name="section5_quantity" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="section5_amount" name="section5_amount" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input type="submit" (click)="saveItem5()"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,143 @@
+<!-- /////////////    BEGINING OF THE DASHBOARD   \\\\\\\\\\\\\ -->
+
+<!-- colours projects add new project -->
+
+<!-- <div class="main-content" style="padding-top: 0px;"> -->
+  <div class="container-fluid" style="padding-top: 0px;">
+    <div class="row">
+
+      <div class="col-md-10 col-md-offset-2">
+
+        <div class="card-content table-responsive table-full-width">
+          <table class="table ">
+            <tbody>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Wedding </td>
+                <td>
+                  <span class="show" ng-show="project.type=='Personal'">PP</span>
+                </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Core </td>
+                <td>
+                  <span class="show" ng-show="project.type=='Enterprise'">EP</span>
+                </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Digital UI </td>
+                <td>
+                  <span class="show" ng-show="project.type=='Personal'">PP</span>
+                </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Marondera Housing </td>
+                <td>
+                  <span class="show" ng-show="project.type=='Enterprise'">EP</span>
+                </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+              <tr ng-repeat="area in personalMap" class="ng-scope">
+                <td ng-click="setActivePage(area.map)" class="ng-binding"> Avenues Road Sign </td>
+                <td>
+                  <span class="show" ng-show="project.type=='Personal'">PP</span>
+                </td>
+                <td>
+                  <span class="ti-pencil" data-toggle="modal" ng-click="edit(area)" data-target="#myModal"></span>
+                </td>
+                <td>
+                  <span class="ti-trash" ng-click="personalMap.$remove(area)"></span>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="necreatewcompany">
+          <div class="card card-plain">
+            <div class="card-header">
+              <h4 class="card-title">Add New Project</h4>
+              <!-- <p class="category">Bootstrap default style</p> -->
+            </div>
+            <div class="card-content">
+
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-border panel-default">
+                  <a data-toggle="collapse" href="#collapseOnePlain">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        Click to Add Project
+                        <!-- <i class="ti-angle-down"></i> -->
+                      </h4>
+                    </div>
+                  </a>
+                  <div id="collapseOnePlain" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <div class="form-group">
+                        <label>Project Name</label>
+                        <input type="text" class="form-control border-input" placeholder="Project Name">
+                      </div>
+                      <div class="form-group">
+                        <div class="form-group">
+                          <label>Project Type: </label>
+                          <select class="form-control">
+                            <!-- <option value="? undefined:undefined ?" selected="selected"></option> -->
+                            <option value="Personal Work">Personal Work</option>
+                            <option value="Enterprise">Enterprise</option>
+                          </select>
+                        </div>
+                        <button type="button" class="btn btn-simple">Save Project</button>
+                        <!-- <button type="button" class="btn btn-primary btn-simple pull-right" (click)="showSwal('input-field')">
+                          Invite user
+                        </button> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="connect2project">
+          <a type="button" routerLink="../base-wizard"  class="btn btn-simple pull-right">
+            Connect to Existing Project
+          </a>
+        </div>
+
+        <!-- <div class="connect2project">
+          <button type="button" class="btn btn-simple pull-right" (click)="showSwal('request-message-and-cancel')">
+            Connect to Existing Project
+          </button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+<!-- </div> -->

@@ -1,0 +1,47 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h4 class="title">Striped Table</h4>
+                    <p class="category">Here is a subtitle for this table</p>
+                </div>
+                <hr>
+                <div class="card-content">
+                    <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <!-- <th></th> -->
+                            <th>Section</th>
+                            <th>Name</th>
+                            <th>Unit</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input [(ngModel)]="section" name="section" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="name" name="name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="unit" name="unit" class="form-control costsum-xs"style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="quantity" name="quantity" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="amount" name="amount" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input type="submit" (click)="saveItem()"> </td>
+                        </tr>
+                        <tr *ngFor="let item of items | async">
+                            <td>{{$index+1}}</td>
+                            <td>{{item.section}}</td>
+                            <td>{{item.name}}</td>
+                            <td>{{item.unit}}</td>
+                            <td>{{item.quantity}}</td>
+                            <td>{{item.amount}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

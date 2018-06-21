@@ -1,0 +1,124 @@
+<div class="card card-plain col-md-12" style=" padding-left: 0px; padding-right: 0px">
+
+  <h5 class="grid-h">Grid options</h5>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th> Project Section
+            <!-- <small>Phones (&lt;576px)</small> -->
+          </th>
+          <th> Section Name
+            <!-- <small>Tablets (≥576px)</small> -->
+          </th>
+
+        </tr>
+      </thead>
+      <style>
+        .input-btn-size{
+          width: 80px;
+        }
+      </style>
+      <tbody>
+        <tr>
+          <th class="text-nowrap" scope="row">Section 1</th>
+          <td>Special Notes</td> <!-- colspan="4" -->
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"><input [(ngModel)]="section1" name="section1" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></th>
+          <td><input [(ngModel)]="section1_name" name="section1_name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></td> <!-- colspan="4" -->
+          <td  class="input-btn-size"><input type="submit" (click)="saveItem()"> </td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Section 2</th>
+          <td>Trade Preambles and Specifications</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"><input [(ngModel)]="section2" name="section2" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></th>
+          <td><input [(ngModel)]="section2_name" name="section2_name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></td> <!-- colspan="4" -->
+          <td  class="input-btn-size"><input type="submit" (click)="saveItem2()"> </td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"> Section 3</th>
+          <td>Preliminaries and Controls<code></code></td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"><input [(ngModel)]="section3" name="section3" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></th>
+          <td><input [(ngModel)]="section3_name" name="section3_name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></td> <!-- colspan="4" -->
+          <td  class="input-btn-size"><input type="submit" (click)="saveItem3()"> </td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Section 4</th>
+          <td>Office Building</td> <!-- colspan="5" -->
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"><input [(ngModel)]="section4" name="section4" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></th>
+          <td><input [(ngModel)]="section4_name" name="section4_name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></td> <!-- colspan="4" -->
+          <td  class="input-btn-size"><input type="submit" (click)="saveItem4()"> </td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Section 5</th>
+          <td>Civil Engineering and Works</td> <!-- colspan="5" -->
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"><input [(ngModel)]="section5" name="section5" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></th>
+          <td><input [(ngModel)]="section5_name" name="section5_name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></td> <!-- colspan="4" -->
+          <td  class="input-btn-size"><input type="submit" (click)="saveItem5()"> </td>
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row">Section 6</th>
+          <td>Prime Cost and Provisional Sums</td>  <!-- colspan="5" -->
+        </tr>
+        <tr>
+          <th class="text-nowrap" scope="row"><input [(ngModel)]="section6" name="section6" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></th>
+          <td><input [(ngModel)]="section6_name" name="section6_name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"></td> <!-- colspan="4" -->
+          <td  class="input-btn-size"><input type="submit" (click)="saveItem6()"> </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div>
+    <button type="button" class="btn btn-primary btn-simple pull-right" ng-click="addRegister(comp)">Save</button>
+  </div>
+</div>
+
+<!-- <button type="button" class="btn btn-info btn-simple" data-toggle="modal" data-target="#myModal">Add Company Description</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Project</th>
+        <th>Execution</th>
+        <th>Project</th>
+        <th>Client</th>
+        <th>Referee</th>
+        <th>Services'Scope</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style=" padding-left: 0px; padding-right: 0px">
+          <textarea class="form-control setp-control" name="" id="" cols="30" rows="1" placeholder="Name" style="padding-left: 5px; padding-right: 5px"></textarea>
+        </td><!- setp-control-txt or setp-control-xs or setp-control choose textarea size->
+        <td style=" padding-left: 0px; padding-right: 0px">
+          <textarea class="form-control setp-control" name="" id="" cols="30" rows="1" placeholder="Period" style="padding-left: 5px; padding-right: 5px"></textarea>
+        </td>
+        <td style="padding-top:1.em; padding-left: 0px; padding-right: 0px">
+          <textarea class="form-control setp-control" name="" id="" cols="50" rows="1" placeholder="Value" style="padding-left: 5px; padding-right: 5px"></textarea>
+        </td>
+        <td style=" padding-left: 0px; padding-right: 0px">
+          <textarea class="form-control setp-control" name="" id="" cols="30" rows="1" placeholder="Name" style="padding-left: 5px; padding-right: 5px"></textarea>
+        </td>
+        <td style=" padding-left: 0px; padding-right: 0px">
+          <textarea class="form-control setp-control" name="" id="" cols="80" rows="1" placeholder="Referee & Contact Details" style="padding-left: 5px; padding-right: 5px"></textarea>
+        </td>
+        <td style=" padding-left: 0px; padding-right: 0px">
+          <textarea class="form-control setp-control" name="" id="" cols="30" rows="1" placeholder="Scope of services" style="padding-left: 5px; padding-right: 5px"></textarea>
+        </td>
+        <!- <td style=" padding-left: 0px; padding-right: 1px">
+          <textarea class="form-control setp-control" name="" id="" cols="30" rows="1" placeholder="simon@mail.com" style="padding-left: 5px; padding-right: 0px"></textarea>
+        </td> ->
+      </tr>
+    </tbody>
+  </table>
+  <br> -->

@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="header">
+                    <h4 class="title">Striped Table</h4>
+                    <p class="category">Here is a subtitle for this table</p>
+                </div>
+                
+                    <hr>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th></th><th>Id</th> <th >Name</th><th >Category</th><th >City</th><th >Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="submit" (click)="saveItem()" > </td>                                     
+                                <!-- <td><input [(ngModel)]="id" name="id" > </td>                                    -->
+                                <td><input [(ngModel)]="test_name" name="test_name" > </td>
+                                <td><input [(ngModel)]="test_category" name="test_category" > </td>
+                                <td><input [(ngModel)]="test_city" name="test_city" > </td>
+                                <td><input [(ngModel)]="test_price" name="test_price" > </td>
+                            </tr>
+                            <tr *ngFor="let item of items | async">
+                                <td >{{$index+1}}</td>
+                                <td >{{item.test_name}}</td>
+                                <td >{{item.test_category}}</td>
+                                <td >{{item.test_city}}</td>
+                                <td >{{item.test_price}}</td>
+                            </tr>
+                        </tbody>
+                        <!-- <thead>
+                            <tr>
+                                <th>Section</th>
+                                <th>Name</th>
+                                <th>Unit</th>
+                                <th>Quantity</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of items | async">
+                                <td>{{item.section3}}</td>
+                                <td>{{item.section3_name}}</td>
+                                <td>{{item.section3_unit}}</td>
+                                <td>{{item.section3_quantity}}</td>
+                                <td>{{item.section3_amount}}</td>
+                            </tr>
+                            <tr>
+                                <td><input [(ngModel)]="section3" name="section3" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                                <td><input [(ngModel)]="section3_name" name="section3_name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                                <td><input [(ngModel)]="section3_unit" name="section3_unit" class="form-control costsum-xs"style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                                <td><input [(ngModel)]="section3_quantity" name="section3_quantity" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                                <td><input [(ngModel)]="section3_amount" name="section3_amount" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                                <td><input type="submit" (click)="saveItem3()"> </td>
+                            </tr>
+                        </tbody> -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div> 

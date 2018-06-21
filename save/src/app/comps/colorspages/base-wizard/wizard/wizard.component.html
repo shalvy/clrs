@@ -1,0 +1,258 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-11 " style="margin-left: 3em">
+                <!-- col-md-offset-1 -->
+                <div class="card card-wizard" id="wizardCard">
+                    <form id="wizardForm" method="" action="">
+                        <div class="card-header text-center">
+                            <h4 class="card-title">Advanced Profile Setup</h4>
+                            <p class="category">Complete the steps for peer project connection</p>
+                        </div>
+                        <div class="card-content">
+                            <ul class="nav nav-pills">
+                                <li>
+                                    <a href="#tab1" data-toggle="tab">Your details</a>
+                                </li>
+                                <li>
+                                    <a href="#tab2" data-toggle="tab">Work</a>
+                                </li>
+                                <li>
+                                    <a href="#tab3" data-toggle="tab">Email</a>
+                                </li>
+                                <li>
+                                    <a href="#tab4" data-toggle="tab">Finish</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane " id="tab1">
+                                    <h5 class="text-center" style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 10px;">
+                                        Please input correct information about yourself.</h5>
+                                    <div class="row">
+                                        <div class="col-md-5 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    First Name
+                                                </label>
+                                                <input class="form-control" type="text" name="first_name" placeholder="ex: Mike" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Last Name
+                                                </label>
+                                                <input class="form-control" type="text" name="last_name" required="true" placeholder="ex: Andrew" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Email
+                                                    <span class="star">*</span>
+                                                </label>
+                                                <input class="form-control" type="text" name="email" email="true" placeholder="ex: hello@team.com" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">Fax
+                                                    <span class="star">*</span>
+                                                </label>
+                                                <input class="form-control" type="tel" name="fax" placeholder="ex: 249999" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Code
+                                                </label>
+                                                <input class="form-control" type="tel" name="code" placeholder="ex: 06" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-5 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">Contact: Work/ Mobile
+                                                    <span class="star">*</span>
+                                                </label>
+                                                <input class="form-control" type="tel" name="role" required placeholder="ex:  072 8988 898" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Town / City
+                                                </label>
+                                                <input class="form-control" type="text" name="role" required placeholder="ex:  Harare" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <Div class="row">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Physical Address
+                                                </label>
+                                                <input class="form-control" type="text" name="role" required placeholder="ex:  7 Woodgate, Mt Mouris" />
+                                            </div>
+                                        </div>
+                                    </Div>
+
+                                </div>
+                                <div class="tab-pane" id="tab2">
+                                    <h5 class="text-center">Please give us more details about your platform.</h5>
+                                    <div class="row">
+                                        <div class="col-md-5 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">Role
+                                                    <span class="star">*</span>
+                                                </label>
+                                                <input class="form-control" type="text" name="role" placeholder="ex: Civil Engineer" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Title
+                                                </label>
+                                                <!--     IMPORTANT! - the "bootstrap select picker" is not compatible with jquery.validation.js, that's why we use the "default select" inside this wizard. We will try to contact the guys who are responsibble for the "bootstrap select picker" to find a solution. Thank you for your patience.
+                                                 -->
+                                                <select name="cities" class="form-control">
+                                                    <option selected="" disabled="">- Title -</option>
+                                                    <option value="0.1">Senior</option>
+                                                    <option value="1.0">Artisan</option>
+                                                    <option value="2.0">Intermediate</option>
+                                                    <option value="3.0">Amature</option>
+                                                    <option value="4.0">Manager</option>
+                                                    <option value="1.0">Assitant</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">Company </label>
+                                                <input class="form-control" type="text" name="framework" placeholder="ex: Company name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Language
+                                                    <span class="star">*</span>
+                                                </label>
+                                                <!--     IMPORTANT! - the "bootstrap select picker" is not compatible with jquery.validation.js, that's why we use the "default select" inside this wizard. We will try to contact the guys who are responsibble for the "bootstrap select picker" to find a solution. Thank you for your patience.
+                                                 -->
+                                                <select name="cities" class="form-control">
+                                                    <option selected="" disabled="">- language -</option>
+                                                    <option value="ms">Bahasa Melayu</option>
+                                                    <option value="ca">Català</option>
+                                                    <option value="da">Dansk</option>
+                                                    <option value="de">Deutsch</option>
+                                                    <option value="en">English</option>
+                                                    <option value="es">Español</option>
+                                                    <option value="el">Eλληνικά</option>
+                                                    <option value="fr">Français</option>
+                                                    <option value="it">Italiano</option>
+                                                    <option value="hu">Magyar</option>
+                                                    <option value="nl">Nederlands</option>
+                                                    <option value="no">Norsk</option>
+                                                    <option value="pl">Polski</option>
+                                                    <option value="pt">Português</option>
+                                                    <option value="fi">Suomi</option>
+                                                    <option value="sv">Svenska</option>
+                                                    <option value="tr">Türkçe</option>
+                                                    <option value="is">Íslenska</option>
+                                                    <option value="cs">Čeština</option>
+                                                    <option value="ru">Русский</option>
+                                                    <option value="th">ภาษาไทย</option>
+                                                    <option value="zh">中文 (简体)</option>
+                                                    <option value="zh-TW">中文 (繁體)</option>
+                                                    <option value="ja">日本語</option>
+                                                    <option value="ko">한국어</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">
+                                                    Work Experience
+                                                </label>
+                                                <!--     IMPORTANT! - the "bootstrap select picker" is not compatible with jquery.validation.js, that's why we use the "default select" inside this wizard. We will try to contact the guys who are responsibble for the "bootstrap select picker" to find a solution. Thank you for your patience.
+                                                 -->
+                                                <select name="cities" class="form-control">
+                                                    <option selected="" disabled="">- years -</option>
+                                                    <option value="0.6">0.6 Years</option>
+                                                    <option value="1.0">1 Year</option>
+                                                    <option value="2.0">2 Years</option>
+                                                    <option value="3.0">3 Years</option>
+                                                    <option value="4.0">4 Years</option>
+                                                    <option value="5.0">5 Years</option>
+                                                    <option value="5 +">5 +Years</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="control-label">Price</label>
+                                                <input class="form-control" type="text" name="price" placeholder="ex: 19.00" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tab3">
+
+                                    <h5 class="text-center">Add the recipient </h5>
+                                    <div class="row">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">To
+                                                    <span class="star">*</span>
+                                                </label>
+                                                <input class="form-control" type="tel" name="fax" placeholder="email: tben@gmail.com" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <div class="form-group">
+                                                <label class="control-label">Message
+                                                    <span class="star">*</span>
+                                                </label>
+                                                <textarea class="form-control" type="text" name="fax" value="Connection request for the project" placeholder="My message...."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane" id="tab4">
+                                    <h2 class="text-center text-space">Yuhuuu!
+                                        <br>
+                                        <small> Click on "
+                                            <b>Finish</b>" to join our community</small>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-default btn-fill btn-wd btn-back pull-left">Back</button>
+                            <button type="button" class="btn btn-info btn-fill btn-wd btn-next pull-right">Next</button>
+                            <button type="button" class="btn btn-info btn-fill btn-wd btn-finish pull-right" (click)="onFinishWizard()">Finish</button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

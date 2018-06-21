@@ -1,0 +1,91 @@
+<div class="main-content" style="padding-top: 0px; margin-left: 0px; margin-right: 0px;">
+  <div class="container-fluid">
+    
+    <div class="row">
+      <div class="col-lg-12 col-md-12" style="padding-left: 0px; padding-right: 0px;">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-10">
+              <div class="card-header"style="margin-top:2em ;margin-bottom:1em">
+                <h4 class="card-title">Project Name</h4>
+                <!-- <p class="category">Vertical tabs</p> -->
+              </div>
+            </div>
+            <div class="btn-magnify">
+              <div class="card-header"style="margin-top:2em ;margin-bottom:1em ;"><!--  padding-left: 20em ; margin-left: 50px -->
+                <!-- <button type="button" class="btn btn-primary btn-simple pull-right" ng-click="addRegister(comp)" style="padding-right: 6em">Save</button> -->
+                <a routerLink="#" type="btn btn-simple" class="card-title pull-right" style="padding-right: 3em"><i class="fa fa-lg fa-user-plus fw"> </i></a>
+                <!-- <p class="category">Vertical tabs</p> -->
+              </div>
+              <!-- <a routerLink="" type="button"class="btn btn-simple"> Invite </a> -->
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="left-vertical-tabs" style="width: 145px">
+                <ul class="nav nav-stacked" role="tablist" style="width:142px">
+                  <li class="active">
+                    <a href="#dash" role="tab" data-toggle="tab">
+                      Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#standards" role="tab" data-toggle="tab">
+                      Standards
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#setup" role="tab" data-toggle="tab">
+                      <!-- sidebar-mini="true" -->
+                      Setup
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#planning" role="tab" data-toggle="tab">
+                      Planning
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#impl" role="tab" data-toggle="tab">
+                      Implementation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#setup" role="tab" data-toggle="tab">
+                      Reporting
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="right-text-tabs" style="padding-left: 0em">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane active" id="dash">
+                     <!-- <app-boss></app-boss> -->
+                     <personal-dashboard-cmp></personal-dashboard-cmp>
+                  </div>
+                  <div class="tab-pane" id="standards">
+                    <app-big></app-big>
+                  </div>
+                  <div class="tab-pane" id="setup">
+                       <app-projects-setup></app-projects-setup>
+                  </div>
+                  <div class="tab-pane" id="planning">
+                    <app-planning></app-planning>
+                  </div>
+                  <div class="tab-pane" id="impl">
+                    <app-projects-implementation></app-projects-implementation>
+                  </div>
+                  <div class="tab-pane" id="report">
+                    <app-report></app-report>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

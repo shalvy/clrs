@@ -1,0 +1,68 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- <div class="card"> -->
+                <div class="header">
+                    <h4 class="title">Project Cost Summary</h4>
+                    <!-- <p class="category">Here is a subtitle for this table</p> -->
+                </div>
+                <hr>
+                <div class="card-content">
+                    <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <!-- <th></th> -->
+                            <th>Section</th>
+                            <th>Name</th>
+                            <th>Unit</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <!-- <tr></tr>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card-title">
+                                <h5>Section</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1">
+                            <div class="form-group">
+                                <select name="cities" class="form-control">
+                                    <option selected="" disabled="" value="1.0">1</option>
+                                    <option value="1.0">1</option>
+                                    <option value="2.0">2</option>
+                                    <option value="3.0">3</option>
+                                    <option value="4.0">4</option>
+                                    <option value="5.0">5</option>
+                                    <option value="6.0">6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> -->
+                    <tbody>
+                        <tr *ngFor="let item of items | async">
+                            <!-- <td>{{$index+1}}</td> -->
+                            <td>{{item.section1}}</td>
+                            <td>{{item.section1_name}}</td>
+                            <td>{{item.section1_unit}}</td>
+                            <td>{{item.section1_quantity}}</td>
+                            <td>{{item.section1_amount}}</td>
+                        </tr>
+                        <tr>
+                            <td><input [(ngModel)]="section1" name="section1" class="form-control costsum-xs "style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="section1_name" name="section1_name" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="section1_unit" name="section1_unit" class="form-control costsum-xs"style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="section1_quantity" name="section1_quantity" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input [(ngModel)]="section1_amount" name="section1_amount" class="form-control costsum-xs" style="padding-left: 5px; padding-right: 5px; padding-top: 0px;padding-bottom: 0px;"> </td>
+                            <td><input type="submit" (click)="saveItem1()"> </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</div>

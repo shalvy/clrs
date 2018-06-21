@@ -1,0 +1,679 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Striped Table</h4>
+                        <p class="category">Here is a subtitle for this table</p>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                          <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th *ngFor="let cell of tableData1.headerRow">{{ cell }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let row of tableData1.dataRows">
+                                        <td *ngFor="let cell of row">{{cell}}</td>
+                                    </tr>
+                                </tbody>
+                          </table>
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card card-plain">
+                        <div class="card-header">
+                            <h4 class="card-title">Table on Plain Background</h4>
+                            <p class="category">Here is a subtitle for this table</p>
+                        </div>
+                        <div class="card-content table-responsive table-full-width">
+                          <table class="table table-hover">
+                              <thead>
+                                  <tr>
+                                    <th *ngFor="let cell of tableData2.headerRow">{{ cell }}</th>
+                                  </tr>
+                              </thead>
+                            <tbody>
+                                    <tr *ngFor="let row of tableData2.dataRows">
+                                        <td *ngFor="let cell of row">{{cell}}</td>
+                                    </tr>
+                            </tbody>
+                          </table>
+
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 00000000000 TABLE 1 00000000000 -->
+                <div class="col-md-12">
+                  <div class="card card-plain">
+                    <div class="card-header">
+                      <h4 class="card-title">Varience Format Table of Tasks</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataVFT.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let row of tableDataVFT.dataRows">
+                            <td *ngFor="let cell of row">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- 000000000000000  In color  000000000000000 -->
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Varience Format Table of Tasks</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataVFT.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="success">
+                            <td *ngFor="let cell of tableDataVFT.dataRows[0]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataVFT.dataRows[1]">{{cell}}</td>
+                          </tr>
+                          <tr class="info">
+                            <td *ngFor="let cell of tableDataVFT.dataRows[2]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataVFT.dataRows[3]">{{cell}}</td>
+                          </tr>
+                          <tr class="danger">
+                            <td *ngFor="let cell of tableDataVFT.dataRows[4]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataVFT.dataRows[5]">{{cell}}</td>
+                          </tr>
+                          <tr class="warning">
+                            <td *ngFor="let cell of tableDataVFT.dataRows[6]">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- 00000000000 TABLE 2 00000000000 -->
+                <div class="col-md-12">
+                  <div class="card card-plain">
+                    <div class="card-header">
+                      <h4 class="card-title">Time Budget Versus Actual Time / Week(t/w)</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataTBVA.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let row of tableDataTBVA.dataRows">
+                            <td *ngFor="let cell of row">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 000000000000000  In color  000000000000000 -->
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Time Budget Versus Actual Time / Week(t/w)</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataTBVA.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="success">
+                            <td *ngFor="let cell of tableDataTBVA.dataRows[0]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataTBVA.dataRows[1]">{{cell}}</td>
+                          </tr>
+                          <tr class="info">
+                            <td *ngFor="let cell of tableDataTBVA.dataRows[2]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataTBVA.dataRows[3]">{{cell}}</td>
+                          </tr>
+                          <tr class="danger">
+                            <td *ngFor="let cell of tableDataTBVA.dataRows[4]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataTBVA.dataRows[5]">{{cell}}</td>
+                          </tr>
+                          <tr class="warning">
+                            <td *ngFor="let cell of tableDataTBVA.dataRows[6]">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- 00000000000 TABLE 3 00000000000 -->
+                <div class="col-md-12">
+                  <div class="card card-plain">
+                    <div class="card-header">
+                      <h4 class="card-title">Annual Plan Tasks Forecast</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataAPTF.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let row of tableDataAPTF.dataRows">
+                            <td *ngFor="let cell of row">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- 8888888888888888888888  in Color **************************** -->
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Annual Plan Tasks Forecast</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataAPTF.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="success">
+                            <td *ngFor="let cell of tableDataAPTF.dataRows[0]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataAPTF.dataRows[1]">{{cell}}</td>
+                          </tr>
+                          <tr class="info">
+                            <td *ngFor="let cell of tableDataAPTF.dataRows[2]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataAPTF.dataRows[3]">{{cell}}</td>
+                          </tr>
+                          <tr class="danger">
+                            <td *ngFor="let cell of tableDataAPTF.dataRows[4]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataAPTF.dataRows[5]">{{cell}}</td>
+                          </tr>
+                          <tr class="warning">
+                            <td *ngFor="let cell of tableDataAPTF.dataRows[6]">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- 00000000000000 TABLE 4 000000000000000 -->
+                <div class="col-md-12">
+                  <div class="card card-plain">
+                    <div class="card-header">
+                      <h4 class="card-title">Multiplier Plan</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataMP.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let row of tableDataMP.dataRows">
+                            <td *ngFor="let cell of row">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Multiplier Plan</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataVFT.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="success">
+                            <td *ngFor="let cell of tableDataMP.dataRows[0]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataMP.dataRows[1]">{{cell}}</td>
+                          </tr>
+                          <tr class="info">
+                            <td *ngFor="let cell of tableDataMP.dataRows[2]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataMP.dataRows[3]">{{cell}}</td>
+                          </tr>
+                          <tr class="danger">
+                            <td *ngFor="let cell of tableDataMP.dataRows[4]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataMP.dataRows[5]">{{cell}}</td>
+                          </tr>
+                          <tr class="warning">
+                            <td *ngFor="let cell of tableDataMP.dataRows[6]">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- 0000000000000000 TABLE 5 000000000000000000  -->
+                <div class="col-md-12">
+                  <div class="card card-plain">
+                    <div class="card-header">
+                      <h4 class="card-title">Multiplier Cummulative Reports</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataMCR.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let row of tableDataMCR.dataRows">
+                            <td *ngFor="let cell of row">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                    </div>
+                  </div>
+                </div>
+                <!-- 00000000000 iN COLOR 0000000000 -->
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4 class="card-title">Multiplier Cummulative Reports</h4>
+                      <small class="category">eg. financial budget</small>
+                    </div>
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataMCR.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="success">
+                            <td *ngFor="let cell of tableDataMCR.dataRows[0]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataMCR.dataRows[1]">{{cell}}</td>
+                          </tr>
+                          <tr class="info">
+                            <td *ngFor="let cell of tableDataMCR.dataRows[2]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataMCR.dataRows[3]">{{cell}}</td>
+                          </tr>
+                          <tr class="danger">
+                            <td *ngFor="let cell of tableDataMCR.dataRows[4]">{{cell}}</td>
+                          </tr>
+                          <tr>
+                            <td *ngFor="let cell of tableDataMCR.dataRows[5]">{{cell}}</td>
+                          </tr>
+                          <tr class="warning">
+                            <td *ngFor="let cell of tableDataMCR.dataRows[6]">{{cell}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- 0000000000000 TABLE 6 0000000000000000 -->
+                <div class="col-md-12">
+                  <div class="card card-plain">
+                    <div class="card-header">
+                      <h4 class="card-title">Health Classification</h4>
+                      <small class="category">eg.Time / financial budget</small>
+                    </div>
+                    <div class="card-content">
+                      <div class="col-md-8 col-md-offset-2">
+                        <div class="card-header">
+                          <h5 class="card-title">Daily Standards</h5>
+                        </div>
+                        <div class="card-content table-responsive table-full-width">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th *ngFor="let cell of tableDataHCD.headerRow">{{ cell }}</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let row of tableDataHCD.dataRows">
+                                <td *ngFor="let cell of row">{{cell}}</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- 33333333333 in color 333333333333 -->
+                      <div class="col-md-8 col-md-offset-2">
+                        <div class="card">
+                          <div class="card-header">
+                            <h5 class="card-title">Daily Standards</h5>
+                          </div>
+                          <div class="card-content table-responsive">
+                            <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th *ngFor="let cell of tableDataHCD.headerRow">{{ cell }}</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="success">
+                                  <td *ngFor="let cell of tableDataHCD.dataRows[0]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCD.dataRows[1]">{{cell}}</td>
+                                </tr>
+                                <tr class="info">
+                                  <td *ngFor="let cell of tableDataHCD.dataRows[2]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCD.dataRows[3]">{{cell}}</td>
+                                </tr>
+                                <tr class="danger">
+                                  <td *ngFor="let cell of tableDataHCD.dataRows[4]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCD.dataRows[5]">{{cell}}</td>
+                                </tr>
+                                <tr class="warning">
+                                  <td *ngFor="let cell of tableDataHCD.dataRows[6]">{{cell}}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- +++++++++++++++++ WEEKLY S TABLE++++++++++++++++ -->
+                      <div class="col-md-8 col-md-offset-2">
+                        <div class="card-header">
+                          <h5 class="card-title">Weekly Standards</h5>
+                        </div>
+                        <div class="card-content table-responsive table-full-width">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th *ngFor="let cell of tableDataHCW.headerRow">{{ cell }}</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let row of tableDataHCW.dataRows">
+                                <td *ngFor="let cell of row">{{cell}}</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- 33333333333 in color 333333333333 -->
+                      <div class="col-md-8 col-md-offset-2">
+                        <div class="card">
+                          <div class="card-header">
+                            <h5 class="card-title">Daily Standards</h5>
+                          </div>
+                          <div class="card-content table-responsive ">
+                            <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th *ngFor="let cell of tableDataHCW.headerRow">{{ cell }}</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="success">
+                                  <td *ngFor="let cell of tableDataHCW.dataRows[0]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCW.dataRows[1]">{{cell}}</td>
+                                </tr>
+                                <tr class="info">
+                                  <td *ngFor="let cell of tableDataHCW.dataRows[2]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCW.dataRows[3]">{{cell}}</td>
+                                </tr>
+                                <tr class="danger">
+                                  <td *ngFor="let cell of tableDataHCW.dataRows[4]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCW.dataRows[5]">{{cell}}</td>
+                                </tr>
+                                <tr class="warning">
+                                  <td *ngFor="let cell of tableDataHCW.dataRows[6]">{{cell}}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ++++++++++++++ MONTHLY S TABLE ++++++++++++++ -->
+                      <div class="col-md-8 col-md-offset-2">
+                        <div class="card-header">
+                          <h5 class="card-title">Monthly Standards</h5>
+                        </div>
+                        <div class="card-content table-responsive table-full-width">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th *ngFor="let cell of tableDataHCM.headerRow">{{ cell }}</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let row of tableDataHCM.dataRows">
+                                <td *ngFor="let cell of row">{{cell}}</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- 33333333333 in color 333333333333 -->
+                      <div class="col-md-8 col-md-offset-2">
+                        <div class="card">
+                          <div class="card-header">
+                            <h5 class="card-title">Daily Standards</h5>
+                          </div>
+                          <div class="card-content table-responsive">
+                            <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th *ngFor="let cell of tableDataHCD.headerRow">{{ cell }}</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="success">
+                                  <td *ngFor="let cell of tableDataHCM.dataRows[0]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCM.dataRows[1]">{{cell}}</td>
+                                </tr>
+                                <tr class="info">
+                                  <td *ngFor="let cell of tableDataHCM.dataRows[2]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCM.dataRows[3]">{{cell}}</td>
+                                </tr>
+                                <tr class="danger">
+                                  <td *ngFor="let cell of tableDataHCM.dataRows[4]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCM.dataRows[5]">{{cell}}</td>
+                                </tr>
+                                <tr class="warning">
+                                  <td *ngFor="let cell of tableDataHCM.dataRows[6]">{{cell}}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- +++++++++++++ YEARLY S TABLE +++++++++++++++ -->
+                      <div class="col-md-8 col-md-offset-2">
+                        <div class="card-header">
+                          <h5 class="card-title">Yearly Standards</h5>
+                        </div>
+                        <div class="card-content table-responsive table-full-width">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th *ngFor="let cell of tableDataHCY.headerRow">{{ cell }}</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let row of tableDataHCY.dataRows">
+                                <td *ngFor="let cell of row">{{cell}}</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- 33333333333 in color 333333333333 -->
+                      <div class="col-md-8 col-md-offset-2">
+                        <div class="card">
+                          <div class="card-header">
+                            <h5 class="card-title">Daily Standards</h5>
+                          </div>
+                          <div class="card-content table-responsive">
+                            <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th *ngFor="let cell of tableDataHCY.headerRow">{{ cell }}</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="success">
+                                  <td *ngFor="let cell of tableDataHCY.dataRows[0]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCY.dataRows[1]">{{cell}}</td>
+                                </tr>
+                                <tr class="info">
+                                  <td *ngFor="let cell of tableDataHCY.dataRows[2]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCY.dataRows[3]">{{cell}}</td>
+                                </tr>
+                                <tr class="danger">
+                                  <td *ngFor="let cell of tableDataHCY.dataRows[4]">{{cell}}</td>
+                                </tr>
+                                <tr>
+                                  <td *ngFor="let cell of tableDataHCY.dataRows[5]">{{cell}}</td>
+                                </tr>
+                                <tr class="warning">
+                                  <td *ngFor="let cell of tableDataHCY.dataRows[6]">{{cell}}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="col-md-6">
+                  <div class="card ">
+                    <div class="card-content table-responsive table-full-width">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th *ngFor="let cell of tableDataC.headerRow">{{ cell }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Regular Table with Colors</h4>
+                            <p class="category">Here is a subtitle for this table</p>
+                        </div>
+                        <div class="card-content table-responsive table-full-width">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                      <th *ngFor="let cell of tableData3.headerRow">{{ cell }}</th>
+                                    </tr>
+                                </thead>
+                              <tbody>
+                                      <tr class="success">
+                                          <td *ngFor="let cell of tableData3.dataRows[0]">{{cell}}</td>
+                                      </tr>
+                                      <tr>
+                                          <td *ngFor="let cell of tableData3.dataRows[1]">{{cell}}</td>
+                                      </tr>
+                                      <tr class="info">
+                                          <td *ngFor="let cell of tableData3.dataRows[2]">{{cell}}</td>
+                                      </tr>
+                                      <tr>
+                                          <td *ngFor="let cell of tableData3.dataRows[3]">{{cell}}</td>
+                                      </tr>
+                                      <tr class="danger">
+                                          <td *ngFor="let cell of tableData3.dataRows[4]">{{cell}}</td>
+                                      </tr>
+                                      <tr>
+                                          <td *ngFor="let cell of tableData3.dataRows[5]">{{cell}}</td>
+                                      </tr>
+                                      <tr class="warning">
+                                          <td *ngFor="let cell of tableData3.dataRows[6]">{{cell}}</td>
+                                      </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
