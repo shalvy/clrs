@@ -1,52 +1,5 @@
-# [Paper Dashboard PRO Angular](https://www.creative-tim.com/product/paper-dashboard-pro-angular) [![version][version-badge]][CHANGELOG]
- <!-- [![license][license-badge]][LICENSE] -->
-
-![alt text](https://s3.amazonaws.com/creativetim_bucket/products/59/opt_pdp_angular_thumbnail.jpg "Paper Dashboard PRO Angular")
-
-**[Paper Dashboard PRO Angular](https://www.creative-tim.com/product/paper-dashboard-pro-angular/)** is the premium version for the [Paper Dashboard Angular](https://www.creative-tim.com/product/paper-dashboard-angular), which is available for free download.
-
-
-During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
-
-* [Robert McIntosh](https://github.com/mouse0270) for the notification system
-* [Chartist](https://gionkunz.github.io/chartist-js/) for the wonderful charts
-* [Tristan Edwards](https://twitter.com/t4t5) for the [Sweet Alert](http://limonte.github.io/sweetalert2/)
-* [Eonasdan](https://github.com/Eonasdan) for the [DateTimPicker](https://eonasdan.github.io/bootstrap-datetimepicker/)
-* Kirill Lebedev for [jVector Maps](http://jvectormap.com/)
-* [Vincent Gabriel](https://twitter.com/gabrielva) for the [Bootstrap Wizard](https://github.com/VinceG/twitter-bootstrap-wizard)
-* [FullCalendar.io](https://fullcalendar.io/) for the awesome Calendar
-
- Let us know your thoughts below. And good luck with development!
-
-
-
-## Links:
-
-+ [Live Preview](https://www.creative-tim.com/product/paper-dashboard-pro-angular)
-+ [Paper Kit - For Front End Development](http://www.creative-tim.com/product/paper-kit?ref=github-pd-pro-angular)
-
-## Quick start
-
-Quick start options:
-
-- [Download from Creative Tim](http://www.creative-tim.com/product/paper-dashboard-pro-angular).
-
-## Terminal Commands
-
-1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
-2. Open Terminal
-3. Go to your file project
-4. Run in terminal: ```npm install -g @angular/cli```
-5. Then: ```npm install```
-6. And: ```ng serve```
-7. Navigate to: [http://localhost:4200/](http://localhost:4200/)
-
-### What's included
-
-Within the download you'll find the following directories and files:
 
 ```
-pd-pro-angular
 ├── README.md
 ├── angular-cli.json
 ├── documentation
@@ -230,29 +183,3 @@ pd-pro-angular
 ```
 
 ## Useful Links
-
-More products from Creative Tim: <http://www.creative-tim.com/bootstrap-themes>
-
-Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
-
-Freebies: <http://www.creative-tim.com/products>
-
-Affiliate Program (earn money): <http://www.creative-tim.com/affiliates/new>
-
-Social Media:
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
-
-[CHANGELOG]: ./CHANGELOG.md
-
-[LICENSE]: ./LICENSE
-
-[version-badge]: https://img.shields.io/badge/version-1.0.1-blue.svg
